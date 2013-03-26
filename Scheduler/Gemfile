@@ -22,6 +22,7 @@ end
 
 gem 'jquery-rails'
 
+gem 'event-calendar', :require => 'event_calendar'
 
 group :test do
   gem "cucumber-rails", ">= 1.2.3"
