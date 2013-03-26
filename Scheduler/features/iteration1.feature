@@ -29,17 +29,17 @@ Scenario outline: Logging in with valid information
 	
 Scenario outline: Going to User Profile
 	Given that I am authenticated
-	When I follow "profile"
-	Then I should be redirected to my profile page
+	When I follow "Profile"
+	Then I am on my profile page
 	And I should see my information
 
 Scenario outline: Editing User Profiles
 	Given that I am on my profile page
 	When I follow “Edit Profile”
-	And I change my information
-	And I press submit
-	Then I should be on my profile page
-	And I should I should see my updated information
+	And I fill in "Email" with "testuser@gmail.com"
+	And I press "Save Changes"
+	Then I am on my profile page
+	And I should I should see "testuser@gmail.com"
 
 Scenario Outline: Looking at calendar
 	Given that I am on the calendar page
