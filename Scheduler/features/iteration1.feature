@@ -45,16 +45,16 @@ Scenario Outline: Looking at calendar
 	Given that I am on the calendar page
 	And I am using the default view
 	Then I should see the current week
-	And I should see all existing shifts in red
+	And I should see existing shifts in red
 	And I should see available shifts in green
 
 Scenario Outline: Selecting a day
 	Given that I am on the calendar page
 	And I am using the weekly view
-	When I follow current day
-	Then I should see the current day view
-	And I should see all existing shifts in red
-	And I should see all available shifts in green
+	When I follow "Today"
+	Then I should see the current day
+	And I should see existing shifts in red
+	And I should see available shifts in green
 
 Scenario Outline: Selecting a shift
 	Given that I am on the calendar page
