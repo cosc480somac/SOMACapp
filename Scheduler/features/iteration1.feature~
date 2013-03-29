@@ -7,7 +7,7 @@ Scenario outline: Creating an account
 	And I fill in "user_password" with "<password>"
 	And I fill in "user_password_confirmation" with "<password>"
 	And I follow "Sign up"
-	Then I should see "logged in as <username>" # your work!
+	Then I should see "logged in as <username>" # your work
 	And I should be on the calendar page
 
 Scenario outline: Logging in with invalid information
@@ -15,7 +15,7 @@ Scenario outline: Logging in with invalid information
 	Then I should be on the login page
 	When I fill in “username” with “<username>”
 	And I fill in “password” with “<password>”
-	When I click “Sign in”
+	When I follow “Sign in”
 	Then I should see the message “invalid login information”
 	And I should be on the login page
 
@@ -24,29 +24,30 @@ Scenario outline: Logging in with valid information
 	Then I should be on the login page
 	When I fill in “username” with “<username>”
 	And I fill in “password” with “<password>”
-	When I click “Sign in”
+	When I follow “Sign in”
 	Then I should be on the calendar page
 	
 Scenario outline: Going to User Profile
 	Given that I am authenticated
-	When I click on profile
-	Then I should be redirected to my profile page
+	When I follow "Profile"
+	Then I am on my profile page
 	And I should see my information
 
 Scenario outline: Editing User Profiles
 	Given that I am on my profile page
-	When I follow the “Edit Profile” link
-	And I change my information
-	And I press submit
-	Then I should be on my profile page
-	And I should I should see my updated information
+	When I follow “Edit Profile”
+	And I fill in "Email" with "testuser1@gmail.com"
+	And I press "Save Changes"
+	Then I am on my profile page
+	And I should I should "testuser1@gmail.com"
+
 
 Scenario Outline: Looking at calendar
-Given that I am on the calendar page
-And I am using the default view
-Then I should see the current week
-And I should see all existing shifts in red
-And I should see available shifts in green
+	Given that I am on the calendar page
+	And I am using the default view
+	Then I should see the current week
+	And I should see all existing shifts in red
+	And I should see available shifts in green
 
 Scenario Outline: Selecting a day
 	Given that I am on the calendar page
