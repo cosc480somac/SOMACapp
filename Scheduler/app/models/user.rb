@@ -1,0 +1,7 @@
+class User < ActiveRecord::Base
+  attr_accessible :first_name, :last_name, :email, :phone,
+		:max_weekly_hours, :max_weekly_days, :max_daily_hours, :max_day_shifts,
+		:seniority_date
+	has_many :certificates
+	has_many :positions
+end
