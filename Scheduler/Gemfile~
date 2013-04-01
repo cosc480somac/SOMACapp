@@ -20,13 +20,17 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'authlogic'
+
 gem 'jquery-rails'
 
 gem 'event-calendar', :require => 'event_calendar'
 
 group :test do
   gem "cucumber-rails", ">= 1.2.3"
+  gem 'cucumber-rails-training-wheels'
   gem "rspec-rails", ">=2.12.2"
+  gem 'database_cleaner'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
