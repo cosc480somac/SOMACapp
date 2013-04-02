@@ -1981,3 +1981,90 @@ Served asset /events.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 00:01:42 -0400
 Served asset /application.js - 304 Not Modified (13ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-04-01 21:51:45 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered calendar/index.html.erb within layouts/application (95.2ms)
+Completed 200 OK in 858ms (Views: 241.8ms | ActiveRecord: 28.7ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-04-01 21:51:46 -0400
+Served asset /event_calendar.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 21:51:46 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 21:51:46 -0400
+Served asset /application.js - 304 Not Modified (80ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-04-01 21:51:46 -0400
+Served asset /events.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-04-01 21:51:46 -0400
+Served asset /event_calendar.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-04-01 21:51:46 -0400
+Served asset /events.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 21:51:46 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 21:51:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 21:51:46 -0400
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/events" for 127.0.0.1 at 2013-04-01 21:51:50 -0400
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" 
+  Rendered events/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 18ms (Views: 14.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 21:51:50 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-04-01 21:51:50 -0400
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-04-01 21:51:50 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-01 21:51:50 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 21:51:50 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 21:51:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 21:51:50 -0400
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-04-01 21:51:50 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-04-01 21:51:50 -0400
+Served asset /event_calendar.js - 304 Not Modified (0ms)
