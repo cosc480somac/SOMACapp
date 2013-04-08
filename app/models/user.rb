@@ -1,7 +1,11 @@
 class User < ActiveRecord::Base
-  attr_accessible :first_name, :last_name, :email, :phone,
-		:max_weekly_hours, :max_weekly_days, :max_daily_hours, :max_day_shifts,
-		:seniority_date
-	has_many :certificates
-	has_many :positions
+  # Include default devise modules. Others available are:
+  # :token_authenticatable, :confirmable,
+  # :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
+
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :email, :password, :password_confirmation, :remember_me
+  # attr_accessible :title, :body
 end
