@@ -17,7 +17,7 @@ Feature: Iteration 2
 		When I fill in “username” with “<username>”
 		And I fill in “password” with “<password>”
 		When I follow “Sign in”
-		Then I should see the message “invalid login information”
+		Then I should see “invalid login information”
 		And I should be on the login page
 
 	Scenario: Logging in with valid information
@@ -29,11 +29,15 @@ Feature: Iteration 2
 		Then I should be on the calendar page
 
 	Scenario: Checking User Profile
-		Given I am on my profile page
-		Then I should see my information
+		Given I am authenticated
+		And I am on my profile page
+		Then I should see "Email: testuser@gmail.com"
+		Then I should see "Phone Number: 555-555-5555"
+		Then I should see "EMT"
 
 	Scenario: Editing User Profile
-		Given I am on my profile page
+		Given I am authenticated
+		And I am on my profile page
 		And I follow “Edit”
 		When I fill in “Email” to “testuseredit@colgate.edu”
 		And I press “Submit”
@@ -41,14 +45,16 @@ Feature: Iteration 2
 		And I should see “testuseredit@colgate.edu”
 
 	Scenario: View Weekly Calendar
-		Given I am on the Calendar page
+		Given I am authenticated
+		And I am on the Calendar page
 		And I follow “Weekly”
-		Then I should see the weekly calendar
+		Then I should see the current week
 
 	Scenario: View Daily Calendar
-		Given I am on the Calendar page
+		Given I am authenticated
+		And I am on the Calendar page
 		And I click on a day
-		Then I should see the daily view
+		Then I should see the current day
 
 
 	
