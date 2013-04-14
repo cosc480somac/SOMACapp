@@ -26,6 +26,11 @@ group :assets do
 end
 
 gem 'devise'
+gem 'haml'
+#group :development do
+  gem 'hpricot'
+  gem 'ruby_parser'
+#end
 
 gem 'jquery-rails'
 

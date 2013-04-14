@@ -1,9 +1,12 @@
 Scheduler::Application.routes.draw do
+  devise_for :admins
+
   devise_for :users
+  match '/users/:id' => 'users#show', :as => :show_user_registration
 
   resources :events
 
-  root :to => 'calendar#index'  
+  root :to => 'calendar#index'
 
   match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
 
