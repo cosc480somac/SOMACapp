@@ -2,9 +2,13 @@ Scheduler::Application.routes.draw do
  # devise_for :admins
 
   devise_for :users
-  match '/users/:id' => 'users#show', :as => :show_user_registration
+  #match '/users/:id' => 'users#show', :as => :show_user_registration
 
   resources :events
+
+	resources :users do
+		match '/users/:id', :to => 'users#index', :as => :user
+	end
 
   root :to => 'calendar#index'
 
