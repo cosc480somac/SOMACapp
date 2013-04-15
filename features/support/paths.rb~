@@ -15,6 +15,9 @@ module NavigationHelpers
     case page_name
 
      when /^calendar page$/ then '/calendar'
+		 when /^the login page$/ then '/users/sign_in'
+		 when /^register$/ then '/users/sign_up'
+		 when /^my profile page$/ then '/users/1'
 
  
 

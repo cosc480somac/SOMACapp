@@ -14,7 +14,10 @@ module NavigationHelpers
   def path_to(page_name)
     case page_name
 
-     when /^calendar page$/ then '/calendar'
+     when /^calendar page$/ then '/'
+		 when /^the login page$/ then '/users/sign_in'
+		 when /^register$/ then '/users/sign_up'
+		 when /^my profile page$/ then '/users/1'
 
  
 

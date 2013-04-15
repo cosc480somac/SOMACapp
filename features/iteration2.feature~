@@ -46,7 +46,7 @@ Feature: Iteration 2
 
 	Scenario: View Weekly Calendar
 		Given I am on calendar page
-		When I follow Weekly Calendar
+		When I follow Weekly View
 		Then I should see the current week
 
 
