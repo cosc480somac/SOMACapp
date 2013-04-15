@@ -4,7 +4,6 @@ module WeeklyCalendar
     #view helper to build the weekly calendar
     options = args.last.is_a?(Hash) ? args.pop : {}
     date = options[:date] || Time.now
-    options[:business_hours] = "false"
     start_date = Date.new(date.year, date.month, date.day)
     end_date = Date.new(date.year, date.month, date.day) + 6
     safe_concat(tag("div", :class => "week"))
