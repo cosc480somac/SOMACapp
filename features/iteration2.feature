@@ -45,16 +45,9 @@ Feature: Iteration 2
 		And I should see “testuseredit@colgate.edu”
 
 	Scenario: View Weekly Calendar
-		Given I am authenticated
-		And I am on the Calendar page
-		And I follow “Weekly”
+		Given I am on the Calendar page
+		When I follow “Weekly View”
 		Then I should see the current week
-
-	Scenario: View Daily Calendar
-		Given I am authenticated
-		And I am on the Calendar page
-		And I click on a day
-		Then I should see the current day
 
 
 	

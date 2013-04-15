@@ -12,3 +12,6 @@ Feature: iteration 1
 		When I press Create Event
 		Then the event should be created
 		
+	Scenario: View Weekly Calendar
+		Given I am on the weekly calendar page
+		Then I should see the current week

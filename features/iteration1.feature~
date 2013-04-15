@@ -9,6 +9,10 @@ Feature: iteration 1
 		Given I am on the events page
 		When I follow New Event
 		And I fill in PARTY TIME for Name
-		When I follow Create Event
+		When I press Create Event
 		Then the event should be created
 		
+	Scenario: View Weekly Calendar
+		Given I am on the calendar page
+		When I follow “Weekly View”
+		Then I should see the current week

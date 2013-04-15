@@ -12,13 +12,22 @@ Then /^I should see the current month$/ do
 page.should have_content('March')
 end
 
-Then /^The event should be created$/ do
+Then /^I should see the current week$/ do
+page.should have_content('24-Hours')
+end
+
+Then /^the event should be created$/ do
 page.should have_content('Event was successfully created')
 end
 
 And /^I fill in PARTY TIME for Name$/ do 
   fill_in('Name', :with => 'PARTY TIME')
 end 
+
+When /^I follow Weekly View$/ do
+  click_link('Weekly View')
+end
+
 
 When /^I follow New Event$/ do
   click_link('New Event')
