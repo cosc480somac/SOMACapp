@@ -1,3 +1,14 @@
 class Event < ActiveRecord::Base
-  has_event_calendar
+require 'active_support/core_ext'
+attr_accessible :end_at, :name, :start_at
+has_event_calendar
+
+def starts_at
+  start_at
+end
+
+def ends_at
+   end_at
+end
+
 end
