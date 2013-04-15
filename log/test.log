@@ -740,3 +740,59 @@ Processing by WeeklyController#index as HTML
   Rendered weekly/index.html.haml (12.9ms)
 Completed 200 OK in 30ms (Views: 21.8ms | ActiveRecord: 0.4ms)
   [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (1.2ms)[0m  [1mbegin transaction[0m
+Started GET "/calendar" for 127.0.0.1 at 2013-04-15 10:33:31 -0400
+Processing by CalendarController#index as HTML
+Completed 401 Unauthorized in 2ms
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-04-15 10:33:32 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (5.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 441ms (Views: 157.2ms | ActiveRecord: 8.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Started GET "/events" for 127.0.0.1 at 2013-04-15 10:33:32 -0400
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (5.2ms)[0m  SELECT "events".* FROM "events" 
+  Rendered events/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 36ms (Views: 24.4ms | ActiveRecord: 6.1ms)
+Started GET "/events/new" for 127.0.0.1 at 2013-04-15 10:33:32 -0400
+Processing by EventsController#new as HTML
+  Rendered layouts/_banner.html.erb (8.1ms)
+  Rendered events/_form.html.erb (43.4ms)
+  Rendered events/new.html.erb within layouts/application (57.2ms)
+Completed 200 OK in 89ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+Started POST "/events" for 127.0.0.1 at 2013-04-15 10:33:33 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"name"=>"PARTY TIME", "start_at(1i)"=>"2013", "start_at(2i)"=>"4", "start_at(3i)"=>"15", "start_at(4i)"=>"14", "start_at(5i)"=>"33", "end_at(1i)"=>"2013", "end_at(2i)"=>"4", "end_at(3i)"=>"15", "end_at(4i)"=>"14", "end_at(5i)"=>"33"}, "commit"=>"Create Event"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (21.9ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 15 Apr 2013 14:33:33 UTC +00:00], ["end_at", Mon, 15 Apr 2013 14:33:00 UTC +00:00], ["name", "PARTY TIME"], ["start_at", Mon, 15 Apr 2013 14:33:00 UTC +00:00], ["updated_at", Mon, 15 Apr 2013 14:33:33 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events/1
+Completed 302 Found in 38ms (ActiveRecord: 22.2ms)
+Started GET "/events/1" for 127.0.0.1 at 2013-04-15 10:33:33 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered events/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 16ms (Views: 9.4ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/weekly" for 127.0.0.1 at 2013-04-15 10:33:33 -0400
+Processing by WeeklyController#index as HTML
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-04-15' and '2013-04-22')[0m
+  Rendered layouts/_banner.html.erb (12.1ms)
+  Rendered weekly/index.html.haml within layouts/application (27.0ms)
+Completed 200 OK in 49ms (Views: 44.5ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
