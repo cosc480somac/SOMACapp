@@ -3,10 +3,10 @@ Then /^I should see the current week$/ do
 page.should have_content('24-Hours')
 end
 
-Given /^I am on the weekly calendar page$/ do
+When(/^I visit 'Weekly Calendar'$/) do
   visit('/weekly')
-  current_path.should == ('/weekly')
 end
+
 
 And /^I fill in email with testuser@gmail.com$/ do
 	fill_in(:user_email, :with => "testuser@gmail.com")
@@ -82,7 +82,6 @@ Then /^I should be on my profile page$/ do
 	current_path.should == ("/users/#{@current_user.id}")
 end
 
-
 When /^I follow Edit$/ do
 	click_link ('Edit')
 end
@@ -95,6 +94,4 @@ Then /^I should see "testuseredit@colgate.edu"$/ do
   assert page.has_content?("testuseredit@colgate.edu")
 end
 
-When /^I follow Weekly Calendar$/ do
-	click_link ("Weekly Calendar")
-end
+

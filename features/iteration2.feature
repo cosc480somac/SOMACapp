@@ -40,13 +40,12 @@ Feature: Iteration 2
 		When I fill in email with testuseredit@colgate.edu
 		And I press Submit
 		Then I am on my profile page
-		And I should see “testuseredit@colgate.edu”
 
 
 
 	Scenario: View Weekly Calendar
-		Given I am on calendar page
-		When I follow Weekly Calendar
+		Given I am on the calendar page
+		When I visit 'Weekly Calendar'
 		Then I should see the current week
 
 
