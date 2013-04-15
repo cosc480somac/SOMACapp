@@ -1,0 +1,30 @@
+-# in app/views/user/profile.html.haml
+
+%h2 #{@user.first_name} #{@user.last_name}
+
+%ul#details
+	%li
+		Email:
+		= @user.email
+	%li
+		Phone Number:
+		= @user.phone
+	%li
+		Positions:
+		%ul#positions
+		- @positions.each do |position|
+			%li= position
+
+%table#certificates
+	%thead
+		%tr
+			%th Certification
+			%th Expiration Date
+	%tbody
+		- @certification.each do |certificate|
+			%tr
+				%td= certification.certificate 
+				%td= certification.expiration_date
+
+= link_to 'Edit', edit_user_path(@user)
+
