@@ -2,11 +2,8 @@
 <%= stylesheet_link_tag "event_calendar" %>
 
 <h1>Calendar</h1>
-<a href="/weekly" target="/weekly">Weekly View</a><br>
-<a href="/events" target="/events">Shift Creation</a>
-<% if false %>
 <%=render :partial => 'layouts/banner' %> 
-<% end %>
+
 
 
 <%= raw(event_calendar) %>
