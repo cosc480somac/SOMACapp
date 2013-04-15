@@ -1,0 +1,13 @@
+.b1 {
+    background-color: #3c7dd6;
+    color: #f2eeee;
+    display: block;
+    float: left;
+    font: normal 14px arial, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+
