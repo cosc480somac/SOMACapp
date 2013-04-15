@@ -1,0 +1,3 @@
+%ul.nested-fields
+  = f.input :title
+  = link_to_remove_fields "Remove Position", f

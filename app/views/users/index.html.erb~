@@ -1,0 +1,36 @@
+
+<h2> All Helpers </h2>
+
+<%= form_tag(users_path, :method => :get) do %>
+	<% @all_positions.each do |position| %>
+		<%= check_box_tag "positions[#{position}]", 1, @selected_positions.include?(position), :id => "positions_#{position}"%><%=position%>
+	<% end %>
+	<%= submit_tag("Submit") %>
+<%end%>
+
+<table border="1">
+	<tr>
+		<th class=@firstname_header><%= link_to "First Name", users_path(:sort => 'firstname', :positions => @selected_positions) %></th>
+		<th class=@firstname_header><%= link_to "Last Name", users_path(:sort => 'lastname', :positions => @selected_positions) %></th>
+		<th>Email</th>
+		<th>Phone</th>
+		<th>Positions</th>
+		<th>More Info</th>
+	</tr>
+		<% @users.each do |user| %>
+			<tr>
+				<td><%= user.first_name %></td> 
+				<td><%= user.last_name%></td>
+				<td><%= user.email%></td>
+				<td><%= user.phone%></td>
+				<td><% @positions.each do |position| %>
+						<% if position.user_id==user.id %>
+							<p><%= position.title %></p>
+						<%end%>
+					<%end%>
+				</td>
+				<td><%= link_to "More about #{user.first_name}", user_path(user)%></td>
+			</tr>
+		<% end %>
+</table>
+
