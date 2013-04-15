@@ -1,5 +1,6 @@
 <h1>Listing events</h1>
-
+<%=render :partial => 'layouts/banner' %> 
+<a href="calendar" target="calendar">Back to Calendar</a>
 <table>
   <tr>
     <th>Name</th>
