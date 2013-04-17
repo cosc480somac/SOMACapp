@@ -7,11 +7,6 @@ When(/^I visit 'Weekly Calendar'$/) do
   visit('/weekly')
 end
 
-And(/^I should see “testuseredit@colgate\.edu”$/) do
-  page.should have_content('testuseredit@colgate.edu')
-end
-
-
 And /^I fill in email with testuser@gmail.com$/ do
 	fill_in(:user_email, :with => "testuser@gmail.com")
 end
@@ -98,4 +93,68 @@ Then /^I should see "testuseredit@colgate.edu"$/ do
   assert page.has_content?("testuseredit@colgate.edu")
 end
 
+Given /^There is a shift up for trade$/ do
+	# assert page.has_content or assert that the trade table has something?
+end
 
+Then /^I should see that shift highlighted$/ do
+	# not sure if we can do this
+end
+
+Given /^I follow Trades$/ do
+	click_link ('Trade')
+end
+
+Given /^I press Request a Trade$/ do
+	click_button ('Request a Trade')
+end
+
+Given /^I select the 9-12 EMT shift for 4\/20\/13$/ do
+	#implement with checkboxes?
+end
+
+Then /^I should see that shift$/ do
+	assert page.has_content('EMT')
+	assert page.has_content('9-12')
+	assert page.has_content('4/20/13')
+end
+
+Given /^I press 4\/20\/13$/ do
+	click_button ('4/20/13')
+end
+
+Then /I should see the daily view for 4\/20\/13$/ do
+	assert page.has_content('4/20/13')
+end
+
+Given /^I press Add Position$/ do
+	click_button('Add Position')
+end
+
+When /^I select Stand By$/ do
+	# Not sure how to test the select thing
+end
+
+Then /^I should see Stand By$/ do
+	assert page.has_content('Stand By')
+end
+
+Given /^I press Add Certificate$/ do
+	click_button ('Add Certificate')
+end
+
+When /^I fill in Certificate with EMT Training$/ do
+fill_in(:certificate, :with => "EMT Training")
+end
+
+When /^I fill in Expiration Date with 1\/1\/2015$/ do
+	fill_in(:expiration_date, :with => "1/1/2015")
+end
+
+Then /^I should see EMT Training$/ do
+	assert page.has_content('EMT Training')
+end
+
+And /^I should see 1\/1\/2015$/ do
+	assert page.has_content ('1/1/2015')
+end

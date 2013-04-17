@@ -1,0 +1,48 @@
+Feature: Iteration 3
+
+	Scenario: See Shifts Up for Trade
+		Given I am authenticated
+		And I am on the calendar page
+		And There is a shift up for trade
+		Then I should see that shift highlighted
+
+	Scenario: View Trades
+		Given I am authenticated
+		And I am on the calendar page
+		And I follow Trades
+		Then I am on the Trades page
+
+	Scenario: Request a Trade
+		Given I am authenticated
+		And I am on the Trades Page
+		And I press Request a Trade
+		And I select the 9-12 EMT shift for 4/20/13
+		And I press Submit
+		Then I am on the Trades Page
+		And I should see that shift
+
+	Scenario: View Daily Calendar
+		Given I am authenticated
+		And I am on the calendar page
+		And I press 4/20/13
+		Then I should see the daily view for 4/20/13
+
+	Scenario: Add Positions to Profile
+		Given I am authenticated
+		And I am on Edit Profile Page
+		And I press Add Position
+		When I select Stand By
+		And I press Submit
+		Then I should be on my profile page
+		And I should see Stand By
+
+	Scenario: Add Certificates to Profile
+		Given I am authenticated
+		And I am on Edit Profile Page
+		And I press Add Certificate
+		When I fill in Certificate with EMT Training
+		And I fill in Expiration Date with 1/1/2015
+		And I press Submit
+		Then I should be on my profile page
+		And I should see EMT Training
+		And I should see 1/1/2015
