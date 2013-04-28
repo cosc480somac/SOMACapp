@@ -5,6 +5,10 @@ Scheduler::Application.routes.draw do
   #match '/users/:id' => 'users#show', :as => :show_user_registration
 
   resources :events
+	resources :events do
+		match 'events/:id/add_user', :to => 'events#add_user', :as => :add_user
+		match 'events/:id/remove_user', :to => 'events#remove_user', :as => :remove_user
+	end
 
 	resources :users do
 		match '/users/:id', :to => 'users#index', :as => :user
