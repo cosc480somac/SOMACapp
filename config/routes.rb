@@ -14,6 +14,7 @@ Scheduler::Application.routes.draw do
 
   match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
   match '/weekly' => 'weekly#index'
+  match '/daily' => 'daily#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
