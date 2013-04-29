@@ -1,3 +1,5 @@
+<%=render :partial => 'layouts/banner' %> 
+<br>
 <h1>Listing Shifts For the Next Week</h1>
 <a href="calendar" target="calendar">Back to Calendar</a>
 <table>
@@ -67,6 +69,104 @@
 
 
 </table>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Start at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+<h2><%= (@start_date +3).strftime("%A") %></h2>
+<% @events4.each do |event| %>
+  <tr>
+    <td><%= event.name %></td>
+    <td><%= event.start_at %></td>
+    <td><%= event.end_at %></td>
+    <td><%= link_to 'Show', event %></td>
+  </tr>
+<% end %>
+
+
+</table>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Start at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+<h2><%= (@start_date +4).strftime("%A") %></h2>
+<% @events5.each do |event| %>
+  <tr>
+    <td><%= event.name %></td>
+    <td><%= event.start_at %></td>
+    <td><%= event.end_at %></td>
+    <td><%= link_to 'Show', event %></td>
+  </tr>
+<% end %>
+
+
+</table>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Start at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+<h2><%= (@start_date +5).strftime("%A") %></h2>
+<% @events6.each do |event| %>
+  <tr>
+    <td><%= event.name %></td>
+    <td><%= event.start_at %></td>
+    <td><%= event.end_at %></td>
+    <td><%= link_to 'Show', event %></td>
+  </tr>
+<% end %>
+
+
+</table>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Start at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+<h2><%= (@start_date +6).strftime("%A") %></h2>
+<% @events7.each do |event| %>
+  <tr>
+    <td><%= event.name %></td>
+    <td><%= event.start_at %></td>
+    <td><%= event.end_at %></td>
+    <td><%= link_to 'Show', event %></td>
+  </tr>
+<% end %>
+
+
+</table>
+
+
+
 
 
 <br />

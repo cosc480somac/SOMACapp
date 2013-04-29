@@ -4,5 +4,5 @@
 <%= button_to "Monthly Calendar", calendar_path, :method => :get, :class => 'b1' %>
 <%= button_to "Weekly Calendar", weekly_path, :class => 'b1' %>
 <%= button_to "Create New Event", new_event_path, :method => :get, :class => 'b1' %>
-<%= button_to "User List", users_path, :class => 'b1', :method => :get, :class => 'b1'%>
+<%= button_to "User List", users_path, :class => 'b1', :method => :get, :class => 'b1' %>
 </DIV>
