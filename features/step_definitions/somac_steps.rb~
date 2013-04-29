@@ -88,6 +88,21 @@ end
 When /^I press Submit$/ do
 	click_button ('Submit')
 end
+And /^I press List Shifts for the Week$/ do
+	click_button ('List Shifts for the Week')
+end
+
+Then /^I should be see the daily list view page$/ do
+	assert page.has_content?("Monday")
+	assert page.has_content?("Tuesday")
+	assert page.has_content?("Wednesday")
+	assert page.has_content?("Thursday")
+	assert page.has_content?("Friday")
+	assert page.has_content?("Saturday")
+	assert page.has_content?("Sunday")
+end
+
+
 
 Then /^I should see "testuseredit@colgate.edu"$/ do
   assert page.has_content?("testuseredit@colgate.edu")

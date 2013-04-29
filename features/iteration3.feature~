@@ -15,7 +15,7 @@ Feature: Iteration 3
 	Scenario: Request a Trade
 		Given I am authenticated
 		And I am on the Trades Page
-		And I click Request a Trade
+		And I press Request a Trade
 		And I select the 9-12 EMT shift for 4/20/13
 		And I press Submit
 		Then I am on the Trades Page
@@ -24,8 +24,8 @@ Feature: Iteration 3
 	Scenario: View Daily Calendar
 		Given I am authenticated
 		And I am on the calendar page
-		And I press 4/20/13
-		Then I should see the daily view for 4/20/13
+		And I press List Shifts for the Week
+		Then I should be on the daily list view page
 
 	Scenario: Add Positions to Profile
 		Given I am authenticated

@@ -24,8 +24,8 @@ Feature: Iteration 3
 	Scenario: View Daily Calendar
 		Given I am authenticated
 		And I am on the calendar page
-		And I press 4/20/13
-		Then I should see the daily view for 4/20/13
+		And I press List Shifts for the Week
+		Then I should see the daily list view page
 
 	Scenario: Add Positions to Profile
 		Given I am authenticated

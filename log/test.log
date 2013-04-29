@@ -6535,3 +6535,717 @@ Completed 200 OK in 12ms (Views: 6.1ms | ActiveRecord: 0.4ms)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Wed, 17 Apr 2013 20:31:22 UTC +00:00], ["title", "EMT"], ["updated_at", Wed, 17 Apr 2013 20:31:22 UTC +00:00], ["user_id", 1]]
   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (1.3ms)[0m  [1mbegin transaction[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:18:44 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (4.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (119.2ms)
+Completed 200 OK in 548ms (Views: 266.8ms | ActiveRecord: 7.8ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:18:45 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (76.1ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:18:45 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$bumY9sff1XI4WrkqhCuXWOWC7FPm0It8ZB/Mx4vd1kWJlVCD9tR2i"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:18:45 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:18:45.484408', "current_sign_in_at" = '2013-04-29 02:18:45.484408', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:18:45.487118' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 368ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:18:45 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (23.6ms)
+  Rendered calendar/index.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 84ms (Views: 44.6ms | ActiveRecord: 1.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:18:45.668344' WHERE "users"."id" = 1[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:18:45 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:18:45 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/calendar" for 127.0.0.1 at 2013-04-28 22:18:45 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (10.1ms)
+  Rendered calendar/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 41ms (Views: 31.3ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:18:45 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 33ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:18:45 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:18:45 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$yIopVM1As/dysl0pK0xogezo1VWCfvc2LTTU0SJmwRb67JTyEwkrO"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:18:45 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:18:45.873641', "current_sign_in_at" = '2013-04-29 02:18:45.873641', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:18:45.875298' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 28ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:18:45 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (6.0ms)
+  Rendered calendar/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 23ms (Views: 17.3ms | ActiveRecord: 0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:18:45.916096' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:18:45 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:18:45 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/calendar" for 127.0.0.1 at 2013-04-28 22:18:45 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (5.1ms)
+  Rendered calendar/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 42ms (Views: 31.9ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:18:46 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:18:46 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$Ujxmut71T2yfbAUmgNqYtO8I8yIIpcM.BZ9G8sPo5rGHeLBdoJ72e"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:18:46.166776', "current_sign_in_at" = '2013-04-29 02:18:46.166776', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:18:46.168907' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 26ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:18:46 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (4.6ms)
+  Rendered calendar/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 25ms (Views: 18.9ms | ActiveRecord: 0.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:18:46.212180' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:18:46 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:18:46 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$sVX0vz.BoPgB8p9ygzU..ufRTx1YqdF.z13GuBPsOoDGmbPJ12IDC"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:18:46.313484', "current_sign_in_at" = '2013-04-29 02:18:46.313484', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:18:46.315680' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 25ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:18:46 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (5.5ms)
+  Rendered calendar/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 22ms (Views: 16.8ms | ActiveRecord: 0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:18:46.355269' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/calendar" for 127.0.0.1 at 2013-04-28 22:18:46 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (5.0ms)
+  Rendered calendar/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 40ms (Views: 30.7ms | ActiveRecord: 0.7ms)
+Started GET "/daily" for 127.0.0.1 at 2013-04-28 22:18:46 -0400
+Processing by DailyController#index as HTML
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-04-28' and '2013-04-29')
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-04-29' and '2013-04-30')[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-04-30' and '2013-05-01')
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-01' and '2013-05-02')[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-02' and '2013-05-03')
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-03' and '2013-05-04')[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-04' and '2013-05-05')
+  Rendered layouts/_banner.html.erb (6.1ms)
+  Rendered daily/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 38ms (Views: 21.5ms | ActiveRecord: 1.7ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:18:46 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:18:46 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$kkZPty78mvv1frBk35TU7OnWRvRBE09zHUNAg/b1wypY0SOOEmZ9W"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:18:46.570463', "current_sign_in_at" = '2013-04-29 02:18:46.570463', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:18:46.572187' WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 25ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:18:46 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (5.2ms)
+  Rendered calendar/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 23ms (Views: 16.6ms | ActiveRecord: 1.2ms)
+  [1m[35mUser Load (1.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:18:46.614115' WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:18:46 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 26ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:18:46 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$Wlpq/mnIqrNwJmfS8zX2FOUhO8pi2KE3X.UHEONTjkSaebAuwwWfG"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:18:46.720424', "current_sign_in_at" = '2013-04-29 02:18:46.720424', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:18:46.722140' WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 25ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:18:46 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (5.2ms)
+  Rendered calendar/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 23ms (Views: 17.1ms | ActiveRecord: 0.7ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:18:46.767137' WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (89.5ms)[0m  [1mINSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:18:46 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.4ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (1.2ms)[0m  [1mbegin transaction[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:19:57 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (6.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (118.9ms)
+Completed 200 OK in 512ms (Views: 238.3ms | ActiveRecord: 7.3ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:19:58 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (76.3ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$An6gemFQ1sy36cKnI3LTje7Exth7vPpFFfJTihSt14HicLYlIJSSS"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:19:59.093695', "current_sign_in_at" = '2013-04-29 02:19:59.093695', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:19:59.096360' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 250ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:19:59 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (8.4ms)
+  Rendered calendar/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 65ms (Views: 28.8ms | ActiveRecord: 1.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:19:59.193231' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/calendar" for 127.0.0.1 at 2013-04-28 22:19:59 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (11.4ms)
+  Rendered calendar/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 40ms (Views: 32.8ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:19:59 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:19:59 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$fC98ZrwrwIAFuTLODE94huII6ZSsvZpFjwUI2.aO4hMGD7oL8s2z."], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:19:59.392037', "current_sign_in_at" = '2013-04-29 02:19:59.392037', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:19:59.393712' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 27ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:19:59 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (4.8ms)
+  Rendered calendar/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 23ms (Views: 17.1ms | ActiveRecord: 0.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:19:59.434572' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/calendar" for 127.0.0.1 at 2013-04-28 22:19:59 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (5.4ms)
+  Rendered calendar/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 42ms (Views: 32.3ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:19:59 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:19:59 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$AmdRExWkcJHjqSqaw7J86uIzO17dtlFRM2NxXlf2SLiOfLMKHfF3i"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:19:59.687235', "current_sign_in_at" = '2013-04-29 02:19:59.687235', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:19:59.689002' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 26ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:19:59 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (5.4ms)
+  Rendered calendar/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 22ms (Views: 17.4ms | ActiveRecord: 0.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:19:59.730011' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:19:59 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (6.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:19:59 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$sSroVKAQ3GH.KL3uCRjnJ.5zXICbYbHvcwo4cJ5boxV4eB1Ojak6m"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:19:59.837976', "current_sign_in_at" = '2013-04-29 02:19:59.837976', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:19:59.839322' WHERE "users"."id" = 1[0m
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 25ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:19:59 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (5.0ms)
+  Rendered calendar/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 22ms (Views: 16.4ms | ActiveRecord: 0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:19:59.879537' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:19:59 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/calendar" for 127.0.0.1 at 2013-04-28 22:19:59 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (5.2ms)
+  Rendered calendar/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 40ms (Views: 30.0ms | ActiveRecord: 0.7ms)
+Started GET "/daily" for 127.0.0.1 at 2013-04-28 22:19:59 -0400
+Processing by DailyController#index as HTML
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-04-28' and '2013-04-29')
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-04-29' and '2013-04-30')[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-04-30' and '2013-05-01')
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-01' and '2013-05-02')[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-02' and '2013-05-03')
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-03' and '2013-05-04')[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-04' and '2013-05-05')
+  Rendered layouts/_banner.html.erb (5.9ms)
+  Rendered daily/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 36ms (Views: 23.1ms | ActiveRecord: 1.8ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:20:00 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (4.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 34ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:20:00 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Apr 2013 02:20:00 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$da7NkxRR1khsKVzymA15beQyYQnFK1xDy7jL0/cRq1wUgtxaNt6yS"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:20:00 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:20:00.106258', "current_sign_in_at" = '2013-04-29 02:20:00.106258', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:20:00.107999' WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 27ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:20:00 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (4.8ms)
+  Rendered calendar/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 22ms (Views: 16.9ms | ActiveRecord: 0.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:20:00.148996' WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 29 Apr 2013 02:20:00 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:20:00 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:20:00 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 22ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:20:00 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Apr 2013 02:20:00 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$g0Q3i3A8zH0sY6QXRPRnTuY52mCs7BnUj4E2Ur13w4FlZZ25J.WQe"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:20:00 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:20:00.255897', "current_sign_in_at" = '2013-04-29 02:20:00.255897', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:20:00.257560' WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 24ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:20:00 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (5.6ms)
+  Rendered calendar/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 22ms (Views: 16.7ms | ActiveRecord: 0.7ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:20:00.298032' WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 29 Apr 2013 02:20:00 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:20:00 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (1.2ms)[0m  [1mbegin transaction[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:21:20 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (4.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (124.9ms)
+Completed 200 OK in 535ms (Views: 250.7ms | ActiveRecord: 7.7ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:21:21 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (77.4ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:21:21 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$fi14lE3IPzQJCa3hfVYHOOdGq2fNiApJrfPwV.9SnNDuIkGlvY0DO"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:21:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:21:21.888529', "current_sign_in_at" = '2013-04-29 02:21:21.888529', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:21:21.891183' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 252ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:21:21 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (8.0ms)
+  Rendered calendar/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 67ms (Views: 29.0ms | ActiveRecord: 1.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:21:21.993945' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:21:22 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:21:22 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/calendar" for 127.0.0.1 at 2013-04-28 22:21:22 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (12.9ms)
+  Rendered calendar/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 43ms (Views: 33.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:21:22 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 31ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:21:22 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:21:22 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$o6Q57KWp5DUXddDyvUQIDO2FtYJT.mMoy8Wi5rADAvreKKwyswdeu"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:21:22 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:21:22.189130', "current_sign_in_at" = '2013-04-29 02:21:22.189130', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:21:22.191490' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 25ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:21:22 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (4.9ms)
+  Rendered calendar/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:21:22.231741' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:21:22 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:21:22 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/calendar" for 127.0.0.1 at 2013-04-28 22:21:22 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (5.0ms)
+  Rendered calendar/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 43ms (Views: 27.1ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:21:22 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:21:22 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:21:22 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$rKs9xtdflGtl161/LAQAAeMKQ3G4VuG2921xkVlaAPJ/goSbFy1DO"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:21:22 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:21:22.485501', "current_sign_in_at" = '2013-04-29 02:21:22.485501', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:21:22.487383' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 27ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:21:22 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (5.1ms)
+  Rendered calendar/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 22ms (Views: 16.8ms | ActiveRecord: 0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:21:22.527953' WHERE "users"."id" = 1[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:21:22 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:21:22 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:21:22 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (2.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:21:22 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:21:22 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$eFS7/6kLd157HYUUns1q9emhmwRXKzqikRIEzX4cPCz86U/v904Zu"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:21:22 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:21:22.629911', "current_sign_in_at" = '2013-04-29 02:21:22.629911', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:21:22.631753' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/
+Completed 302 Found in 26ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:21:22 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (5.3ms)
+  Rendered calendar/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 22ms (Views: 15.8ms | ActiveRecord: 0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:21:22.671764' WHERE "users"."id" = 1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 29 Apr 2013 02:21:22 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:21:22 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/calendar" for 127.0.0.1 at 2013-04-28 22:21:22 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (4.7ms)
+  Rendered calendar/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 35ms (Views: 25.8ms | ActiveRecord: 0.7ms)
+Started GET "/daily" for 127.0.0.1 at 2013-04-28 22:21:22 -0400
+Processing by DailyController#index as HTML
+  [1m[35mEvent Load (4.1ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-04-28' and '2013-04-29')
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-04-29' and '2013-04-30')[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-04-30' and '2013-05-01')
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-01' and '2013-05-02')[0m
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-02' and '2013-05-03')
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-03' and '2013-05-04')[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-04' and '2013-05-05')
+  Rendered layouts/_banner.html.erb (5.8ms)
+  Rendered daily/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 37ms (Views: 20.7ms | ActiveRecord: 5.4ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:21:23 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:21:23 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Apr 2013 02:21:23 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$gSP.7bJ3bxoMlVBP/BRzI.ksLPrywR8ntvhrqVz7l5n8XcGbobRZO"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:21:23 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:21:23.423251', "current_sign_in_at" = '2013-04-29 02:21:23.423251', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:21:23.424917' WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 27ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:21:23 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (5.8ms)
+  Rendered calendar/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 23ms (Views: 17.6ms | ActiveRecord: 0.7ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:21:23.466964' WHERE "users"."id" = 1
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 29 Apr 2013 02:21:23 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:21:23 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-04-28 22:21:23 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 26ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2013-04-28 22:21:23 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"testuser@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 29 Apr 2013 02:21:23 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "testuser@gmail.com"], ["encrypted_password", "$2a$04$4G0bMuwszmhan0sX2Cw19utFMc1QF03l7xbz3KV5att9mQHHosq2m"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Mon, 29 Apr 2013 02:21:23 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-04-29 02:21:23.572315', "current_sign_in_at" = '2013-04-29 02:21:23.572315', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-04-29 02:21:23.574136' WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 25ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2013-04-28 22:21:23 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-03-31 04:00:00.000000' <= end_at) AND (start_at< '2013-05-05 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (5.2ms)
+  Rendered calendar/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 22ms (Views: 16.7ms | ActiveRecord: 0.7ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'testuser@gmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "first_name" = 'test', "last_name" = 'user', "phone" = '555-555-5555', "updated_at" = '2013-04-29 02:21:23.615163' WHERE "users"."id" = 1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "positions" ("created_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Mon, 29 Apr 2013 02:21:23 UTC +00:00], ["title", "EMT"], ["updated_at", Mon, 29 Apr 2013 02:21:23 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
