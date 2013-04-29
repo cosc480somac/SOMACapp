@@ -48,6 +48,12 @@ table#users th, table#users td {
   padding: 4px;
   text-align: left;
 }
+
+table#users td {
+  padding: 4px;
+  text-align: left;
+	background-color: #FFFFF2;
+}
 table#users th.hilite {
   background-color: yellow;
 }

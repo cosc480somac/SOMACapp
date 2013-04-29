@@ -43,40 +43,11 @@ class UsersController < ApplicationController
   def edit
     @user = User.find params[:id]
 		@positions = Position.find_all_by_user_id(@user.id)
-		@selected_positions = []
-		@positions.each do |position|
-			@selected_positions << position.title
-		end
-		@all_positions = Position.all_titles
-		@certificates = Certificate.find_all_by_user_id(@user.id) || []
   end
 
   def update
     @user = User.find params[:id]
     @user.update_attributes!(params[:user])
-		@certificate = Certificate.new(params[:certificate])
-		# check if all params[:positions] are in the positions table
-		# if not add them.
-		@all_positions = Position.all_titles
-		@pos = params[:positions] || []
-		@positions = []
-		@pos.each do |position|
-			@positions << position[0]
-		end
-		@not_positions = @all_positions - @positions
-		# adds all positions that do not exist for user
-		@positions.each do |position|
-			if Position.find_by_user_id_and_title(@user.id, position) == nil
-				Position.create!(:title => position, :user_id => @user.id)
-			end
-		end
-		# delete all positions that no longer exist for user
-		@not_positions.each do |position|
-			if Position.find_by_user_id_and_title(@user.id, position) != nil
-				p = Position.find_by_user_id_and_title(@user.id, position)
-				p.destroy
-			end
-		end
     flash[:notice] = "#Profile was successfully updated."
     redirect_to user_path(@user)
   end
