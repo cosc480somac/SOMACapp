@@ -18,7 +18,7 @@ module NavigationHelpers
 		 when /^the login page$/ then '/users/sign_in'
 		 when /^register$/ then '/users/sign_up'
 		 when /^my profile page$/ then '/users/1'
-
+		 when /^Edit Profile Page$/ then 'users/1/edit'
  
 
     # Add more mappings here.

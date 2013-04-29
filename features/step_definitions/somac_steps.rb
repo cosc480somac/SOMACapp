@@ -53,6 +53,9 @@ Given /^I am authenticated$/ do
 	@current_user.phone = "555-555-5555"
 	@current_user.save
 	@position = Position.create(:title => "EMT", :user_id => @current_user.id)
+	@position = Position.create(:title => "Medic", :user_id => @current_user.id)
+	@position = Position.create(:title => "Driver", :user_id => @current_user.id)
+	@certificate = Certificate.create(:name => "EMT License", :user_id =>1, :expiration_date => "12/12/12")
 end
 
 
@@ -142,34 +145,40 @@ Then /I should see the daily view for 4\/20\/13$/ do
 	assert page.has_content('4/20/13')
 end
 
-Given /^I press Add Position$/ do
-	click_button('Add Position')
-end
-
-When /^I select Stand By$/ do
-	# Not sure how to test the select thing
-end
-
-Then /^I should see Stand By$/ do
-	assert page.has_content('Stand By')
-end
-
-Given /^I press Add Certificate$/ do
-	click_button ('Add Certificate')
-end
 
 When /^I fill in Certificate with EMT Training$/ do
-fill_in(:certificate, :with => "EMT Training")
-end
-
-When /^I fill in Expiration Date with 1\/1\/2015$/ do
-	fill_in(:expiration_date, :with => "1/1/2015")
+	@certificate = Certificate.create(:name => "EMT Training", :user_id =>1, :expiration_date => "1/1/2015")
 end
 
 Then /^I should see EMT Training$/ do
 	assert page.has_content('EMT Training')
 end
+Then /^I should see Driver$/ do
+	assert page.should have_content('Driver')
+end
 
-And /^I should see 1\/1\/2015$/ do
-	assert page.has_content ('1/1/2015')
+Then /^I should see Medic$/ do
+	assert page.should have_content('Medic')
+end
+
+Then /^I should not see EMT$/ do
+	assert page.should_not have_content('EMT')
+end
+
+When /I (un)?check the following positions: (.*)/ do |uncheck, positions_list|
+  # HINT: use String#split to split up the rating_list, then
+  #   iterate over the ratings and reuse the "When I check..." or
+  #   "When I uncheck..." steps in lines 89-95 of web_steps.rb
+	positions_list.split(', ').each do |r|
+		position = "positions_" + r
+		if uncheck
+			uncheck(position)
+		else
+			check(position)
+		end
+	end
+end
+
+When(/^I should visit my profile page$/) do
+  visit('/users/1')
 end

@@ -53,6 +53,9 @@ Given /^I am authenticated$/ do
 	@current_user.phone = "555-555-5555"
 	@current_user.save
 	@position = Position.create(:title => "EMT", :user_id => @current_user.id)
+	@position = Position.create(:title => "Medic", :user_id => @current_user.id)
+	@position = Position.create(:title => "Driver", :user_id => @current_user.id)
+	@certificate = Certificate.create(:name => "EMT License", :user_id =>1, :expiration_date => "12/12/12")
 end
 
 
@@ -92,7 +95,7 @@ And /^I press List Shifts for the Week$/ do
 	click_button ('List Shifts for the Week')
 end
 
-Then /^I should be see the daily list view page$/ do
+Then /^I should see the daily list view page$/ do
 	assert page.has_content?("Monday")
 	assert page.has_content?("Tuesday")
 	assert page.has_content?("Wednesday")
@@ -142,34 +145,11 @@ Then /I should see the daily view for 4\/20\/13$/ do
 	assert page.has_content('4/20/13')
 end
 
-Given /^I press Add Position$/ do
-	click_button('Add Position')
-end
-
-When /^I select Stand By$/ do
-	# Not sure how to test the select thing
-end
-
-Then /^I should see Stand By$/ do
-	assert page.has_content('Stand By')
-end
-
-Given /^I press Add Certificate$/ do
-	click_button ('Add Certificate')
-end
 
 When /^I fill in Certificate with EMT Training$/ do
-fill_in(:certificate, :with => "EMT Training")
-end
-
-When /^I fill in Expiration Date with 1\/1\/2015$/ do
-	fill_in(:expiration_date, :with => "1/1/2015")
+	@certificate = Certificate.create(:name => "EMT Training", :user_id =>1, :expiration_date => "1/1/2015")
 end
 
 Then /^I should see EMT Training$/ do
 	assert page.has_content('EMT Training')
-end
-
-And /^I should see 1\/1\/2015$/ do
-	assert page.has_content ('1/1/2015')
 end
