@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 	has_many :positions
 	has_many :certificates
+	accepts_nested_attributes_for :certificates
 	has_and_belongs_to_many :events, :uniq => true	
 
   # Include default devise modules. Others available are:
@@ -13,7 +14,7 @@ class User < ActiveRecord::Base
 
 
  attr_accessible :email, :password, :password_confirmation, :remember_me,
-		:first_name, :last_name, :phone
+		:first_name, :last_name, :phone, :certificates_attributes
   # attr_accessible :title, :body
 
 

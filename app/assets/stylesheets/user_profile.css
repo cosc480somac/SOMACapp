@@ -33,23 +33,31 @@ h1.title {
   font-size: 2em;
   font-style: normal;
 }
-table#users {
+ul#user {
+	list-style-type: none;
+}
+ul#user li {
+	padding-left: 12px;
+}
+table#certificates {
   margin: 10px;
   border-collapse: collapse;
-  width: 100%;
+  width: 50%;
   border-bottom: 2px solid black;
 }
-table#users th {
+table#certificates th {
   border: 2px solid black;
   font-weight: bold;
   background-color: wheat;
 }
-table#users th, table#users td {
+table#certificates th, table#certificates td {
   padding: 4px;
   text-align: left;
 }
-table#users th.hilite {
-  background-color: yellow;
+table#certificates td {
+  padding: 4px;
+  text-align: left;
+	background-color: #FFFFF2;
 }
 #notice #warning {
   background: rosybrown;

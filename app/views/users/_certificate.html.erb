@@ -1,0 +1,12 @@
+<div class="certificate">
+<% new_or_existing = certificate.new_record? ? 'new' : 'existing' %>
+<% prefix = "certificate[#{new_or_existing}_certificate_attributes][]" %>  
+
+<% fields_for prefix, certificate do |certificate_form| -%>
+	<p>
+    Certificate: <%= certificate_form.text_field :name %>
+		Expiration Date: <%= certificate_form.date_select :expiration_date %>
+	<%= link_to_function "remove", "$(this).up(.certificate').remove()" %>
+  </p>
+<% end -%>
+</div>
