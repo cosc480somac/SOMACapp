@@ -1,5 +1,7 @@
-
 <p id="notice"><%= notice %></p>
+
+<%=render :partial => 'layouts/banner' %> 
+<br>
 
 <p>
   <b>Name:</b>
@@ -16,6 +18,21 @@
   <%= @event.end_at %>
 </p>
 
+<p>
+	<b><u>Users</u></b>
+	<br>
+	<% @event.users.each do |user| %>
+		<%= user.first_name %>
+		<%= user.last_name %>
+		<br>
+	<%end%>
+</p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<A HREF="javascript:javascript:history.go(-1)">Back</A>
+<%= link_to 'Add Yourself', event_add_user_path(@event) %>
+<br>
+<%= link_to 'Remove Yourself', event_remove_user_path(@event) %>
+<br>
+<%= link_to 'Trade This Event', event_remove_user_path(@event) %>
+<br>
+
+<%= link_to 'Edit', edit_event_path(@event) %>

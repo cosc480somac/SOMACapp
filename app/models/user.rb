@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 	has_many :positions
 	has_many :certificates
+	has_and_belongs_to_many :events, :uniq => true	
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,

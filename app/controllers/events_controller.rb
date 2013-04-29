@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  before_filter :authenticate_user!
   # GET /events
   # GET /events.json
   def index
@@ -21,11 +22,24 @@ class EventsController < ApplicationController
     end
   end
 
+	def add_user
+		@event = Event.find(params[:event_id])
+		@user = current_user
+		@event.users<<(@user)
+		redirect_to event_path(@event)
+	end
+
+	def remove_user
+		@event = Event.find(params[:event_id])
+		@user = current_user
+		@event.users.delete(@user)
+		redirect_to event_path(@event)
+	end
+
   # GET /events/new
   # GET /events/new.json
   def new
     @event = Event.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @event }
