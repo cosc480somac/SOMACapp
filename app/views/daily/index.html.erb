@@ -10,7 +10,7 @@
     <th></th>
   </tr>
 
-<h1><%= @date.strftime("%A") %></h1>
+<h2><%= @date.strftime("%A") %></h2>
 <% @events.each do |event| %>
   <tr>
     <td><%= event.name %></td>
@@ -19,7 +19,20 @@
     <td><%= link_to 'Show', event %></td>
   </tr>
 <% end %>
+</table>
 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Start at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+<h2><%= (@start_date +1).strftime("%A") %></h2>
 <% @events2.each do |event| %>
   <tr>
     <td><%= event.name %></td>
@@ -29,6 +42,20 @@
   </tr>
 <% end %>
 
+</table>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Start at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+<h2><%= (@start_date +2).strftime("%A") %></h2>
 <% @events3.each do |event| %>
   <tr>
     <td><%= event.name %></td>
@@ -40,6 +67,7 @@
 
 
 </table>
+
 
 <br />
 

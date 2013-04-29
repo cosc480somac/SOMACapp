@@ -1,7 +1,8 @@
 class DailyController < ApplicationController
 	def index
 	@date = Time.now
-	@start_date = Date.new(@date.year, @date.month, @date.day) 
+	@start_date = Date.new(@date.year, @date.month, @date.day)
+	 
 	@events = Event.find(:all, :conditions => ['start_at between ? and ?', @start_date, @start_date+1])
         @events2 = Event.find(:all, :conditions => ['start_at between ? and ?', @start_date+1, @start_date+2])
         @events3 = Event.find(:all, :conditions => ['start_at between ? and ?', @start_date+2, @start_date+3])
