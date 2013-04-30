@@ -31,7 +31,6 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
 
-
   def show
     id = params[:id] # retrieve user ID from URI route
     @user = User.find(id) # look up user by unique ID
@@ -48,13 +47,11 @@ class UsersController < ApplicationController
 			@selected_positions << position.title
 		end
 		@all_positions = Position.all_titles
-		@certificates = Certificate.find_all_by_user_id(@user.id) || []
   end
 
   def update
     @user = User.find params[:id]
     @user.update_attributes!(params[:user])
-		@certificate = Certificate.new(params[:certificate])
 		# check if all params[:positions] are in the positions table
 		# if not add them.
 		@all_positions = Position.all_titles

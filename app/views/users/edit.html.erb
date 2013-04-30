@@ -23,16 +23,6 @@
     <%= f.text_field :phone %>
   </p>
 
-	<%= f.fields_for :certificates do |cert_fields| %>
-		<p>Certificates:</p>
-		<% @certificates.each do |certificate| %>
-			<p>Certificate: <%= certificate.name %>
-			Expiration Date: <%= certificate.expiration_date %></p>
-		<%end%>
-		Certificate: <%= cert_fields.text_field :name%>
-		Expiration Date: <%= cert_fields.date_select :expiration_date%>
-	<% end %>
-<p></p>
 	<%= f.fields_for :positions do |position_fields| %>
 			Positions: 
 <%= form_tag(users_path, :method => :get) do %>

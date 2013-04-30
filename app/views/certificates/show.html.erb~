@@ -4,33 +4,13 @@
 
 <h1><%= @user.first_name %> <%= @user.last_name %></h1>
 
-<ul id="user">
-	<li>
-		<b>Email Address:</b>
-		<%= @user.email%>
-	</li>
-	<li>
-		<b>Phone Number:</b>
-		<%= @user.phone %>
-	</li>
-
-
-<li><b>Positions:</b>
-	<ul id="positions">
-	<% @positions.each do |position| %>
-		<li><%= position.title%></li>
-	<% end %>
-</ul>
-</li>
-</ul>
-<p> </p>
 <table id="certificates"border="1">
 	<tr>
 		<th> Certification</th>
 		<th> Expiration Date</th>
 		<th></th>
 	</tr>
-	<% @certification.each do |certificate| %>
+	<% @certificate.each do |certificate| %>
 		<tr>
 			<td><%= certificate.name %></td>
 			<td><%= certificate.expiration_date %></td>
@@ -39,5 +19,3 @@
 	<% end %>
 </table>
 <%= link_to 'Add New Certificate', new_user_certificate_path(@user) %>
-<p></p>
-<%= link_to 'Edit', edit_user_path(@user) %>

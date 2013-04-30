@@ -1,5 +1,6 @@
 <h1> Edit Profile </h1>
 <%=render :partial => 'layouts/banner' %> 
+<br/>
 
 <%= form_for @user do |f| %>
   <p>
@@ -22,7 +23,25 @@
     <%= f.text_field :phone %>
   </p>
 
+	<%= f.fields_for :certificates do |cert_fields| %>
+		<p>Certificates:</p>
+		<% @certificates.each do |certificate| %>
+			<p>Certificate: <%= certificate.name %>
+			Expiration Date: <%= certificate.expiration_date %></p>
+		<%end%>
+		Certificate: <%= cert_fields.text_field :name%>
+		Expiration Date: <%= cert_fields.date_select :expiration_date%>
+	<% end %>
+<p></p>
+	<%= f.fields_for :positions do |position_fields| %>
+			Positions: 
+<%= form_tag(users_path, :method => :get) do %>
+	<% @all_positions.each do |position| %>
+		<%= check_box_tag "positions[#{position}]", 1, @selected_positions.include?(position), :id => "positions_#{position}"%><%=position%>
+		<% end %>
+	<p><%= submit_tag("Submit") %></p>
+<%end%>
 
+	<%end%>
 
-  <p><%= f.submit "Submit" %></p>
 <% end %>

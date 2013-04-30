@@ -1,0 +1,18 @@
+<h1> Edit Certificate </h1>
+<%=render :partial => 'layouts/banner' %> 
+<br/>
+
+<%= form_for [@user, @certificate] do %>
+
+	<p>
+		<%= label :certificate, :name, 'Name' %>
+		<%= text_field :certificate, 'name' %>
+	</p>
+
+	<p>
+		<%= label :certificate, :expiration_date, 'Expiration Date' %>
+		<%= date_select :certificate, 'expiration_date' %>
+	</p>
+
+	<%= submit_tag 'Save Changes' %>
+<%end%>

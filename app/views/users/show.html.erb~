@@ -1,39 +1,43 @@
+<%= stylesheet_link_tag "user_profile" %>
 <%=render :partial => 'layouts/banner' %> 
+<br/>
 
-<h2><%= @user.first_name %> <%= @user.last_name %></h2>
+<h1><%= @user.first_name %> <%= @user.last_name %></h1>
 
-<ul>
+<ul id="user">
 	<li>
+		<b>Email Address:</b>
 		<%= @user.email%>
 	</li>
 	<li>
-		Phone Number:
+		<b>Phone Number:</b>
 		<%= @user.phone %>
 	</li>
-</ul>
 
-<table>
-	<tr>
-		<th> Positions: </th>
-	</tr>
+
+<li><b>Positions:</b>
+	<ul id="positions">
 	<% @positions.each do |position| %>
-		<tr>
-			<td><%= position.title%><td>
-		</tr>
+		<li><%= position.title%></li>
 	<% end %>
-</table>
-
-<table>
+</ul>
+</li>
+</ul>
+<p> </p>
+<table id="certificates"border="1">
 	<tr>
 		<th> Certification</th>
 		<th> Expiration Date</th>
+		<th></th>
 	</tr>
 	<% @certification.each do |certificate| %>
 		<tr>
 			<td><%= certificate.name %></td>
 			<td><%= certificate.expiration_date %></td>
+			<td><%= link_to 'Edit Certificate', edit_user_certificate_path(@user, certificate) %></td>
 		</tr>
 	<% end %>
 </table>
-
+<%= link_to 'Add New Certificate', user_certificate_path(@user) %>
+<p></p>
 <%= link_to 'Edit', edit_user_path(@user) %>

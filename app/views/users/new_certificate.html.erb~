@@ -1,0 +1,18 @@
+<h1> Create New Certificate </h1>
+<%=render :partial => 'layouts/banner' %> 
+<br/>
+
+<%= form_tag users_path do %>
+
+	<p>
+		<%= label :certificate, :name, 'Name' %>
+		<%= text_file :certificate, 'name' %>
+	</p>
+
+	<p>
+		<%= label :certificate, :expiration_date, 'Expiration Date' %>
+		<%= date_select :certificate, 'expiration_date' %>
+	</p>
+
+	<%= submit_tag 'Save Changes' %>
+<%ennnnnnd%>

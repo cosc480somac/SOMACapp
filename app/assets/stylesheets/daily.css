@@ -1,0 +1,192 @@
+
+h1 {
+  color: maroon;
+  font-size: 150%;
+  font-style: italic;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid DarkSlateGrey;
+}
+h1.title {
+  margin: 0 0 1em;
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  border-bottom: 4px solid gold;
+  font-size: 2em;
+  font-style: normal;
+}
+table#one {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 95%;
+  border-bottom: 2px solid black;
+}
+table#one th {
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: wheat;
+}
+table#one th, table#one td {
+  padding: 4px;
+  text-align: left;
+}
+
+table#one td {
+  padding: 4px;
+  text-align: left;
+	background-color: #FFFFF2;
+}
+table#one th.hilite {
+  background-color: yellow;
+}
+table#two {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 95%;
+  border-bottom: 2px solid black;
+}
+table#two th {
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: wheat;
+}
+table#two th, table#two td {
+  padding: 4px;
+  text-align: left;
+}
+table#two td {
+  padding: 4px;
+  text-align: left;
+	background-color: #FFFFF2;
+}
+table#two th.hilite {
+  background-color: yellow;
+}
+table#three {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 95%;
+  border-bottom: 2px solid black;
+}
+table#three th {
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: wheat;
+}
+table#three th, table#three td {
+  padding: 4px;
+  text-align: left;
+}
+table#three td {
+  padding: 4px;
+  text-align: left;
+	background-color: #FFFFF2;
+}
+table#three th.hilite {
+  background-color: yellow;
+}
+table#four {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 95%;
+  border-bottom: 2px solid black;
+}
+table#four th {
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: wheat;
+}
+table#four th, table#four td {
+  padding: 4px;
+  text-align: left;
+}
+table#four td {
+  padding: 4px;
+  text-align: left;
+	background-color: #FFFFF2;
+}
+table#four th.hilite {
+  background-color: yellow;
+}
+table#five {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 95%;
+  border-bottom: 2px solid black;
+}
+table#five th {
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: wheat;
+}
+table#five th, table#five td {
+  padding: 4px;
+  text-align: left;
+}
+table#five td {
+  padding: 4px;
+  text-align: left;
+	background-color: #FFFFF2;
+}
+table#five th.hilite {
+  background-color: yellow;
+}
+table#six {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 95%;
+  border-bottom: 2px solid black;
+}
+table#six th {
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: wheat;
+}
+table#six th, table#six td {
+  padding: 4px;
+  text-align: left;
+}
+table#six td {
+  padding: 4px;
+  text-align: left;
+	background-color: #FFFFF2;
+}
+table#six th.hilite {
+  background-color: yellow;
+}
+table#seven {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 95%;
+  border-bottom: 2px solid black;
+}
+table#seven th {
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: wheat;
+}
+table#seven th, table#seven td {
+  padding: 4px;
+  text-align: left;
+}
+
+table#seven td {
+  padding: 4px;
+  text-align: left;
+	background-color: #FFFFF2;
+}
+table#seven th.hilite {
+  background-color: yellow;
+}
+#notice #warning {
+  background: rosybrown;
+  margin: 1em 0;
+  padding: 4px;
+}
+form label {
+  display: block;
+  line-height: 25px;
+  font-weight: bold;
+  color: maroon;
+}

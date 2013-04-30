@@ -12,7 +12,10 @@ Scheduler::Application.routes.draw do
 
 	resources :users do
 		match '/users/:id', :to => 'users#index', :as => :user
+		resources :certificates
 	end
+
+	
 
   root :to => 'calendar#index'
 

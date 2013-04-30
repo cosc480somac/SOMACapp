@@ -1,0 +1,19 @@
+<%= stylesheet_link_tag "user_profile" %>
+<%=render :partial => 'layouts/banner' %> 
+<br/>
+
+<h1><%= @user.first_name %> <%= @user.last_name %></h1>
+
+<table id="certificates"border="1">
+	<tr>
+		<th> Certification</th>
+		<th> Expiration Date</th>
+		<th></th>
+	</tr>
+	<tr>
+		<td><%= @certificate.name %></td>
+		<td><%= @certificate.expiration_date %></td>
+		<td><%= link_to 'Edit Certificate', edit_user_certificate_path(@user, @certificate) %></td>
+	</tr>
+</table>
+<%= link_to 'Add New Certificate', new_user_certificate_path(@user) %>
