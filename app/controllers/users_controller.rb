@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+load_and_authorize_resource
 	def index
 		@users = User.all
 		@positions = Position.all
@@ -51,6 +51,8 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find params[:id]
+    authorize! :assign_roles, @user if params[:user][:assign_roles]
+
     @user.update_attributes!(params[:user])
 		# check if all params[:positions] are in the positions table
 		# if not add them.

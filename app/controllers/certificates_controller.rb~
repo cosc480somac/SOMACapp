@@ -2,7 +2,7 @@ class CertificatesController < ApplicationController
 
 	def show
 		@user = User.find params[:user_id]
-		@certificate = certificate.find params[:id]
+		@certificate = Certificate.find params[:id]
 	end
 
 	def new

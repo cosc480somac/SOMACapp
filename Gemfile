@@ -27,6 +27,7 @@ end
 
 gem 'devise'
 gem 'haml'
+gem 'cancan'
 #group :development do
   gem 'hpricot'
   gem 'ruby_parser'

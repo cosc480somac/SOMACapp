@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+load_and_authorize_resource
 	def index
 		@users = User.all
 		@positions = Position.all
@@ -52,7 +52,6 @@ class UsersController < ApplicationController
   def update
     @user = User.find params[:id]
     @user.update_attributes!(params[:user])
-		@certificate = Certificate.new(params[:certificate])
 		# check if all params[:positions] are in the positions table
 		# if not add them.
 		@all_positions = Position.all_titles

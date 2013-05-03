@@ -23,6 +23,13 @@
     <%= f.text_field :phone %>
   </p>
 
+  <p>
+	<% if can? :assign_roles, User %>
+	<%= f.label :role%>
+	<%= f.collection_select :role, User::ROLES, :to_s, :humanize %><br />
+	<% end %><br />
+  </p>
+
 	<%= f.fields_for :positions do |position_fields| %>
 			Positions: 
 <%= form_tag(users_path, :method => :get) do %>

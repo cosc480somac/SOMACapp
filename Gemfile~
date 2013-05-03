@@ -27,10 +27,10 @@ end
 
 gem 'devise'
 gem 'haml'
-group :development do
+#group :development do
   gem 'hpricot'
   gem 'ruby_parser'
-end
+#end
 
 gem 'jquery-rails'
 
