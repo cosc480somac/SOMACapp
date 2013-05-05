@@ -1,0 +1,28 @@
+class Ability
+  include CanCan::Ability
+     
+   def initialize(user)
+   # Define abilities for the passed in user here. For example:
+       user ||= User.new # guest user (not logged in)
+       if user.role == "admin"
+         can :manage, :all
+	 can :assign_roles, User
+       else if user.role == "helper"
+	 can :read, :all
+	 can [:create, :update, :destroy], User, :id=>user.id
+	 #can [:update, :destroy], Certificates, :id=>user.id
+	 can [:update, :destroy], Certificate, :id=>user.id
+	 can [:update, :destroy], Event, :id=>user.id 
+       else if user.role == "coordinator"
+	 can :read, :all
+	 can [:create, :update, :destroy], User, :id=>user.id
+	 #can [:update, :destroy], Certificates, :id=>user.id
+	 can [:create, :update, :destroy], Certificate, :id=>user.id
+	 can [:create, :update, :destroy], Event
+       else
+	 can :read, :all
+       end
+       end
+       end
+  end
+end
