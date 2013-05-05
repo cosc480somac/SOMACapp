@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+@date = Time.now
+@start_date = Date.new(@date.year, @date.month, @date.day) 
+ 
+ Event.create(:name => 'Test time',:start_at => @start_date , :end_at => @start_date+1)
