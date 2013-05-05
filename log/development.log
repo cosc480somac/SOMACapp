@@ -31348,3 +31348,2072 @@ Served asset /event_calendar.js - 304 Not Modified (0ms)
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:28:05 -0400
 Served asset /application.js - 304 Not Modified (11ms)
 >>>>>>> 58dfee22b2a8dec633f5661482351c9c4d7077a3
+Connecting to database specified by database.yml
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-05-05 16:40:58 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mEvent Load (0.6ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-04-28 04:00:00.000000' <= end_at) AND (start_at< '2013-06-02 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (18.9ms)
+  Rendered calendar/index.html.erb within layouts/application (76.9ms)
+Completed 200 OK in 838ms (Views: 279.9ms | ActiveRecord: 72.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:40:59 -0400
+Served asset /application.css - 304 Not Modified (82ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:40:59 -0400
+Served asset /banner.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:40:59 -0400
+Served asset /daily.css - 304 Not Modified (131ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:40:59 -0400
+Served asset /event_calendar.css - 304 Not Modified (32ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:40:59 -0400
+Served asset /events.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:40:59 -0400
+Served asset /scaffolds.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:40:59 -0400
+Served asset /user_list.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:40:59 -0400
+Served asset /user_profile.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:40:59 -0400
+Served asset /weekly.css - 304 Not Modified (42ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:40:59 -0400
+Served asset /jquery.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:40:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:40:59 -0400
+Served asset /event_calendar.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:40:59 -0400
+Served asset /events.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:00 -0400
+Served asset /application.js - 304 Not Modified (64ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-05-05 16:41:08 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-04-28 04:00:00.000000' <= end_at) AND (start_at< '2013-06-02 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (5.9ms)
+  Rendered calendar/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 81ms (Views: 70.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:08 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:08 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:08 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:08 -0400
+Served asset /event_calendar.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:08 -0400
+Served asset /events.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:09 -0400
+Served asset /scaffolds.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:09 -0400
+Served asset /user_list.css - 304 Not Modified (34ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:09 -0400
+Served asset /user_profile.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:09 -0400
+Served asset /weekly.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:09 -0400
+Served asset /jquery.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:09 -0400
+Served asset /event_calendar.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:09 -0400
+Served asset /events.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:09 -0400
+Served asset /application.js - 304 Not Modified (16ms)
+
+
+Started GET "/daily" for 127.0.0.1 at 2013-05-05 16:41:10 -0400
+Processing by DailyController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-05' and '2013-05-06')[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-06' and '2013-05-07')
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-07' and '2013-05-08')[0m
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-08' and '2013-05-09')
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-09' and '2013-05-10')[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-10' and '2013-05-11')
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-11' and '2013-05-12')[0m
+  Rendered layouts/_banner.html.erb (10.6ms)
+  Rendered daily/index.html.erb within layouts/application (105.6ms)
+Completed 200 OK in 179ms (Views: 156.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:11 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:11 -0400
+Served asset /banner.css - 304 Not Modified (39ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:11 -0400
+Served asset /daily.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:11 -0400
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:11 -0400
+Served asset /events.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:11 -0400
+Served asset /scaffolds.css - 304 Not Modified (43ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:11 -0400
+Served asset /user_list.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:11 -0400
+Served asset /user_profile.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:11 -0400
+Served asset /jquery.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:11 -0400
+Served asset /weekly.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:11 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:11 -0400
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:11 -0400
+Served asset /events.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:11 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-05-05 16:41:13 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-04-28 04:00:00.000000' <= end_at) AND (start_at< '2013-06-02 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (5.9ms)
+  Rendered calendar/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 70ms (Views: 61.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:13 -0400
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:14 -0400
+Served asset /banner.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:14 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:14 -0400
+Served asset /event_calendar.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:14 -0400
+Served asset /events.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:14 -0400
+Served asset /scaffolds.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:14 -0400
+Served asset /user_list.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:14 -0400
+Served asset /user_profile.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:14 -0400
+Served asset /weekly.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:14 -0400
+Served asset /jquery.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:14 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:14 -0400
+Served asset /event_calendar.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:14 -0400
+Served asset /events.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:14 -0400
+Served asset /application.js - 304 Not Modified (21ms)
+
+
+Started GET "/events/9" for 127.0.0.1 at 2013-05-05 16:41:15 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mEvent Load (0.6ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered layouts/_banner.html.erb (8.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT DISTINCT "users".* FROM "users" INNER JOIN "events_users" ON "users"."id" = "events_users"."user_id" WHERE "events_users"."event_id" = 9[0m
+  Rendered events/show.html.erb within layouts/application (413.8ms)
+Completed 200 OK in 485ms (Views: 445.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:16 -0400
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:16 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:16 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:16 -0400
+Served asset /event_calendar.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:16 -0400
+Served asset /events.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:16 -0400
+Served asset /scaffolds.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:16 -0400
+Served asset /user_list.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:16 -0400
+Served asset /user_profile.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:16 -0400
+Served asset /weekly.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:16 -0400
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:16 -0400
+Served asset /event_calendar.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:16 -0400
+Served asset /events.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:16 -0400
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/events/9/events/9/add_user" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Processing by EventsController#add_user as HTML
+  Parameters: {"event_id"=>"9", "id"=>"9"}
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-04-28 04:00:00.000000' <= end_at) AND (start_at< '2013-06-02 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (5.9ms)
+  Rendered calendar/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 79ms (Views: 70.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Served asset /daily.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Served asset /event_calendar.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Served asset /events.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Served asset /scaffolds.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Served asset /user_list.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Served asset /user_profile.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Served asset /weekly.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Served asset /jquery.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Served asset /event_calendar.js - 304 Not Modified (156ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:19 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/events/9" for 127.0.0.1 at 2013-05-05 16:41:21 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered layouts/_banner.html.erb (7.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT DISTINCT "users".* FROM "users" INNER JOIN "events_users" ON "users"."id" = "events_users"."user_id" WHERE "events_users"."event_id" = 9[0m
+  Rendered events/show.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 75ms (Views: 44.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:21 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:21 -0400
+Served asset /banner.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:21 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:21 -0400
+Served asset /event_calendar.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:21 -0400
+Served asset /events.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:22 -0400
+Served asset /scaffolds.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:22 -0400
+Served asset /user_list.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:22 -0400
+Served asset /user_profile.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:22 -0400
+Served asset /weekly.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:22 -0400
+Served asset /jquery.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:22 -0400
+Served asset /event_calendar.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:22 -0400
+Served asset /events.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:22 -0400
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/daily" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Processing by DailyController#index as HTML
+  [1m[35mEvent Load (0.6ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-05' and '2013-05-06')
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-06' and '2013-05-07')[0m
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-07' and '2013-05-08')
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-08' and '2013-05-09')[0m
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-09' and '2013-05-10')
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-10' and '2013-05-11')[0m
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-11' and '2013-05-12')
+  Rendered layouts/_banner.html.erb (7.8ms)
+  Rendered daily/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 73ms (Views: 50.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Served asset /daily.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Served asset /scaffolds.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Served asset /user_list.css - 304 Not Modified (39ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Served asset /user_profile.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Served asset /weekly.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Served asset /events.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:33 -0400
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mEvent Load (0.6ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-04-28 04:00:00.000000' <= end_at) AND (start_at< '2013-06-02 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (7.1ms)
+  Rendered calendar/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 180ms (Views: 152.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Served asset /daily.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Served asset /event_calendar.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Served asset /events.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Served asset /scaffolds.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Served asset /user_list.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Served asset /user_profile.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Served asset /weekly.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Served asset /jquery.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Served asset /event_calendar.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:35 -0400
+Served asset /application.js - 304 Not Modified (22ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 51ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+  [1m[36mEvent Load (0.7ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-04-28 04:00:00.000000' <= end_at) AND (start_at< '2013-06-02 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (13.7ms)
+  Rendered calendar/index.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 109ms (Views: 90.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Served asset /banner.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Served asset /event_calendar.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Served asset /events.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Served asset /scaffolds.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Served asset /user_list.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Served asset /user_profile.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Served asset /weekly.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Served asset /events.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:37 -0400
+Served asset /application.js - 304 Not Modified (17ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2013-05-05 16:41:39 -0400
+Processing by EventsController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 41ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-04-28 04:00:00.000000' <= end_at) AND (start_at< '2013-06-02 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (6.6ms)
+  Rendered calendar/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 88ms (Views: 68.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Served asset /application.css - 304 Not Modified (146ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Served asset /scaffolds.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Served asset /events.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Served asset /daily.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Served asset /event_calendar.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Served asset /banner.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Served asset /user_list.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Served asset /user_profile.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Served asset /weekly.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Served asset /jquery.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Served asset /event_calendar.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Served asset /events.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:40 -0400
+Served asset /application.js - 304 Not Modified (24ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-05-05 16:41:43 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OIwJNgt3y+KGEI4BYT905vO7oL7n0KuDFjq24xJnHQ8="}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 28ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-05 16:41:43 -0400
+Processing by CalendarController#index as HTML
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-05-05 16:41:43 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (14.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 67ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:43 -0400
+Served asset /application.css - 304 Not Modified (166ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:43 -0400
+Served asset /banner.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:43 -0400
+Served asset /user_list.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:43 -0400
+Served asset /scaffolds.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:43 -0400
+Served asset /events.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:44 -0400
+Served asset /event_calendar.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:44 -0400
+Served asset /daily.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:44 -0400
+Served asset /user_profile.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:44 -0400
+Served asset /weekly.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:44 -0400
+Served asset /jquery.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:44 -0400
+Served asset /event_calendar.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:44 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:44 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-05-05 16:41:46 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 64ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:46 -0400
+Served asset /application.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:46 -0400
+Served asset /banner.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:46 -0400
+Served asset /daily.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:46 -0400
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:46 -0400
+Served asset /events.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:46 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:46 -0400
+Served asset /user_list.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:46 -0400
+Served asset /user_profile.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:46 -0400
+Served asset /weekly.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:47 -0400
+Served asset /jquery.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:47 -0400
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:47 -0400
+Served asset /events.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:47 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-05-05 16:41:55 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K6zFk/G7loataETz5N+PNNJ82g/92XNfP3SyikaiMLU=", "user"=>{"email"=>"cw@womp.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"admin"}, "commit"=>"Sign up"}
+  [1m[35m (6.3ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'cw@womp.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (91.0ms)[0m  INSERT INTO "users" ("created_at", "current_sign_in_at", "current_sign_in_ip", "email", "encrypted_password", "first_name", "last_name", "last_sign_in_at", "last_sign_in_ip", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "role", "sign_in_count", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sun, 05 May 2013 20:41:56 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", "cw@womp.com"], ["encrypted_password", "$2a$10$.JHxnHAQp0zmBQjfabYPUuQA/aMFbuD/FtVRN7KHl9s51tpuU7MLu"], ["first_name", nil], ["last_name", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["role", "admin"], ["sign_in_count", 0], ["updated_at", Sun, 05 May 2013 20:41:56 UTC +00:00]]
+  [1m[36m (28.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-05-05 20:41:56.223343', "current_sign_in_at" = '2013-05-05 20:41:56.223343', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-05-05 20:41:56.225441' WHERE "users"."id" = 10[0m
+  [1m[35m (18.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 623ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1[0m
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-04-28 04:00:00.000000' <= end_at) AND (start_at< '2013-06-02 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (16.5ms)
+  Rendered calendar/index.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 92ms (Views: 76.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Served asset /banner.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Served asset /event_calendar.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Served asset /events.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Served asset /scaffolds.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Served asset /user_list.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Served asset /user_profile.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Served asset /weekly.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Served asset /jquery.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Served asset /event_calendar.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Served asset /events.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:56 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/events/new" for 127.0.0.1 at 2013-05-05 16:41:58 -0400
+Processing by EventsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1[0m
+  Rendered layouts/_banner.html.erb (6.9ms)
+  Rendered events/_form.html.erb (51.4ms)
+  Rendered events/new.html.erb within layouts/application (63.5ms)
+Completed 200 OK in 138ms (Views: 92.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:58 -0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:58 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:59 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:59 -0400
+Served asset /event_calendar.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:59 -0400
+Served asset /events.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:59 -0400
+Served asset /scaffolds.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:59 -0400
+Served asset /user_list.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:59 -0400
+Served asset /user_profile.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:41:59 -0400
+Served asset /weekly.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:59 -0400
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:59 -0400
+Served asset /event_calendar.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:59 -0400
+Served asset /events.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:41:59 -0400
+Served asset /application.js - 304 Not Modified (27ms)
+
+
+Started POST "/events" for 127.0.0.1 at 2013-05-05 16:42:03 -0400
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K6zFk/G7loataETz5N+PNNJ82g/92XNfP3SyikaiMLU=", "event"=>{"name"=>"test time", "start_at(1i)"=>"2013", "start_at(2i)"=>"5", "start_at(3i)"=>"5", "start_at(4i)"=>"20", "start_at(5i)"=>"41", "end_at(1i)"=>"2013", "end_at(2i)"=>"5", "end_at(3i)"=>"5", "end_at(4i)"=>"20", "end_at(5i)"=>"41"}, "commit"=>"Create Event"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 05 May 2013 20:42:03 UTC +00:00], ["end_at", Sun, 05 May 2013 20:41:00 UTC +00:00], ["name", "test time"], ["start_at", Sun, 05 May 2013 20:41:00 UTC +00:00], ["updated_at", Sun, 05 May 2013 20:42:03 UTC +00:00]]
+  [1m[36m (83.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/11
+Completed 302 Found in 151ms (ActiveRecord: 85.5ms)
+
+
+Started GET "/events/11" for 127.0.0.1 at 2013-05-05 16:42:03 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "11"]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "11"]]
+  Rendered layouts/_banner.html.erb (11.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT DISTINCT "users".* FROM "users" INNER JOIN "events_users" ON "users"."id" = "events_users"."user_id" WHERE "events_users"."event_id" = 11[0m
+  Rendered events/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 92ms (Views: 52.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:03 -0400
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:03 -0400
+Served asset /banner.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:04 -0400
+Served asset /daily.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:04 -0400
+Served asset /event_calendar.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:04 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:04 -0400
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:04 -0400
+Served asset /user_list.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:04 -0400
+Served asset /user_profile.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:04 -0400
+Served asset /weekly.css - 304 Not Modified (44ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:04 -0400
+Served asset /jquery.js - 304 Not Modified (51ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:04 -0400
+Served asset /event_calendar.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:04 -0400
+Served asset /application.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:04 -0400
+Served asset /events.js - 304 Not Modified (5ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-04-28 04:00:00.000000' <= end_at) AND (start_at< '2013-06-02 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (7.4ms)
+  Rendered calendar/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 83ms (Views: 62.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Served asset /daily.css - 304 Not Modified (54ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Served asset /event_calendar.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Served asset /events.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Served asset /scaffolds.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Served asset /user_list.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Served asset /user_profile.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Served asset /weekly.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Served asset /jquery.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Served asset /event_calendar.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:06 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started POST "/weekly" for 127.0.0.1 at 2013-05-05 16:42:08 -0400
+Processing by WeeklyController#index as HTML
+  Parameters: {"authenticity_token"=>"K6zFk/G7loataETz5N+PNNJ82g/92XNfP3SyikaiMLU="}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-05' and '2013-05-12')
+  Rendered layouts/_banner.html.erb (6.5ms)
+  Rendered weekly/index.html.haml within layouts/application (132.3ms)
+Completed 200 OK in 176ms (Views: 171.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+Served asset /daily.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+Served asset /event_calendar.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+Served asset /events.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+Served asset /scaffolds.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+Served asset /user_list.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+Served asset /user_profile.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+Served asset /weekly.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+Served asset /jquery.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+Served asset /event_calendar.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/images/grid.png" for 127.0.0.1 at 2013-05-05 16:42:09 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/grid.png"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/cosc480/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/cosc480/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/cosc480/.rvm/rubies/ruby-1.9.3-p327/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/cosc480/.rvm/gems/ruby-1.9.3-p327/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/daily" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Processing by DailyController#index as HTML
+  [1m[36mEvent Load (1.7ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-05' and '2013-05-06')[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-06' and '2013-05-07')
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-07' and '2013-05-08')[0m
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-08' and '2013-05-09')
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-09' and '2013-05-10')[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-10' and '2013-05-11')
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-11' and '2013-05-12')[0m
+  Rendered layouts/_banner.html.erb (15.5ms)
+  Rendered daily/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 65ms (Views: 51.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Served asset /banner.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Served asset /daily.css - 304 Not Modified (42ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Served asset /event_calendar.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Served asset /events.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Served asset /scaffolds.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Served asset /user_list.css - 304 Not Modified (33ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Served asset /user_profile.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Served asset /weekly.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Served asset /jquery.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:11 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/events/11" for 127.0.0.1 at 2013-05-05 16:42:13 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "11"]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "11"]]
+  Rendered layouts/_banner.html.erb (6.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT DISTINCT "users".* FROM "users" INNER JOIN "events_users" ON "users"."id" = "events_users"."user_id" WHERE "events_users"."event_id" = 11[0m
+  Rendered events/show.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 158ms (Views: 132.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:14 -0400
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:14 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:14 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:14 -0400
+Served asset /event_calendar.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:14 -0400
+Served asset /events.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:14 -0400
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:14 -0400
+Served asset /user_list.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:14 -0400
+Served asset /user_profile.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:14 -0400
+Served asset /weekly.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:14 -0400
+Served asset /jquery.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:14 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:14 -0400
+Served asset /event_calendar.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:14 -0400
+Served asset /events.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:14 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/events/11/events/11/add_user" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Processing by EventsController#add_user as HTML
+  Parameters: {"event_id"=>"11", "id"=>"11"}
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "11"]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "11"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "events_users" ("event_id", "user_id") VALUES (11, 10)
+  [1m[36m (22.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/11
+Completed 302 Found in 57ms (ActiveRecord: 23.6ms)
+
+
+Started GET "/events/11" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "11"]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "11"]]
+  Rendered layouts/_banner.html.erb (13.9ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT DISTINCT "users".* FROM "users" INNER JOIN "events_users" ON "users"."id" = "events_users"."user_id" WHERE "events_users"."event_id" = 11[0m
+  Rendered events/show.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 135ms (Views: 92.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Served asset /event_calendar.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Served asset /events.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Served asset /scaffolds.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Served asset /user_list.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Served asset /user_profile.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Served asset /weekly.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Served asset /event_calendar.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:16 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:17 -0400
+Served asset /application.js - 304 Not Modified (19ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-05-05 16:42:20 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35mPosition Load (0.2ms)[0m  SELECT "positions".* FROM "positions" 
+  Rendered layouts/_banner.html.erb (24.0ms)
+  Rendered users/index.html.erb within layouts/application (63.8ms)
+Completed 200 OK in 269ms (Views: 183.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:21 -0400
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:21 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:21 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:21 -0400
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:21 -0400
+Served asset /events.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:21 -0400
+Served asset /scaffolds.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:21 -0400
+Served asset /user_list.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:21 -0400
+Served asset /user_profile.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:21 -0400
+Served asset /weekly.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:21 -0400
+Served asset /jquery.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:21 -0400
+Served asset /event_calendar.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:21 -0400
+Served asset /events.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:21 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/users/10" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35mPosition Load (0.3ms)[0m  SELECT "positions".* FROM "positions" WHERE "positions"."user_id" = 10
+  [1m[36mCertificate Load (0.3ms)[0m  [1mSELECT "certificates".* FROM "certificates" WHERE "certificates"."user_id" = 10[0m
+  Rendered layouts/_banner.html.erb (7.0ms)
+  Rendered users/show.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 107ms (Views: 60.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Served asset /banner.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Served asset /scaffolds.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Served asset /user_list.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Served asset /user_profile.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Served asset /weekly.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Served asset /jquery.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Served asset /events.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:25 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/users/10/edit" for 127.0.0.1 at 2013-05-05 16:42:31 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36mPosition Load (0.4ms)[0m  [1mSELECT "positions".* FROM "positions" WHERE "positions"."user_id" = 10[0m
+  Rendered layouts/_banner.html.erb (11.2ms)
+  Rendered users/edit.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 212ms (Views: 184.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:32 -0400
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:32 -0400
+Served asset /banner.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:32 -0400
+Served asset /daily.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:32 -0400
+Served asset /event_calendar.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:32 -0400
+Served asset /events.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:32 -0400
+Served asset /user_list.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:32 -0400
+Served asset /user_profile.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:32 -0400
+Served asset /weekly.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:32 -0400
+Served asset /scaffolds.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:32 -0400
+Served asset /jquery.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:32 -0400
+Served asset /event_calendar.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:32 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:32 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started PUT "/users/10" for 127.0.0.1 at 2013-05-05 16:42:38 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K6zFk/G7loataETz5N+PNNJ82g/92XNfP3SyikaiMLU=", "user"=>{"first_name"=>"Chris", "last_name"=>"Weber", "email"=>"cw@womp.com", "phone"=>"", "role"=>"admin"}, "commit"=>"Submit", "id"=>"10"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  UPDATE "users" SET "first_name" = 'Chris', "last_name" = 'Weber', "phone" = '', "updated_at" = '2013-05-05 20:42:38.524437' WHERE "users"."id" = 10
+  [1m[36m (18.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mPosition Load (0.4ms)[0m  SELECT "positions".* FROM "positions" WHERE "positions"."user_id" = 10 AND "positions"."title" = 'Paid_Driver' LIMIT 1
+  [1m[36mPosition Load (0.3ms)[0m  [1mSELECT "positions".* FROM "positions" WHERE "positions"."user_id" = 10 AND "positions"."title" = 'Driver' LIMIT 1[0m
+  [1m[35mPosition Load (0.3ms)[0m  SELECT "positions".* FROM "positions" WHERE "positions"."user_id" = 10 AND "positions"."title" = 'EMT' LIMIT 1
+  [1m[36mPosition Load (1.9ms)[0m  [1mSELECT "positions".* FROM "positions" WHERE "positions"."user_id" = 10 AND "positions"."title" = 'Medic' LIMIT 1[0m
+  [1m[35mPosition Load (0.2ms)[0m  SELECT "positions".* FROM "positions" WHERE "positions"."user_id" = 10 AND "positions"."title" = 'S/O' LIMIT 1
+  [1m[36mPosition Load (0.3ms)[0m  [1mSELECT "positions".* FROM "positions" WHERE "positions"."user_id" = 10 AND "positions"."title" = 'Stand_Bys' LIMIT 1[0m
+Redirected to http://localhost:3000/users/10
+Completed 302 Found in 114ms (ActiveRecord: 23.6ms)
+
+
+Started GET "/users/10" for 127.0.0.1 at 2013-05-05 16:42:38 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (11.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "10"]]
+  [1m[36mPosition Load (0.1ms)[0m  [1mSELECT "positions".* FROM "positions" WHERE "positions"."user_id" = 10[0m
+  [1m[35mCertificate Load (0.3ms)[0m  SELECT "certificates".* FROM "certificates" WHERE "certificates"."user_id" = 10
+  Rendered layouts/_banner.html.erb (18.7ms)
+  Rendered users/show.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 159ms (Views: 104.7ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:38 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:38 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:38 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:39 -0400
+Served asset /event_calendar.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:39 -0400
+Served asset /events.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:39 -0400
+Served asset /scaffolds.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:39 -0400
+Served asset /user_list.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:39 -0400
+Served asset /weekly.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:39 -0400
+Served asset /user_profile.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:39 -0400
+Served asset /jquery.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:39 -0400
+Served asset /event_calendar.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:39 -0400
+Served asset /events.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:39 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/daily" for 127.0.0.1 at 2013-05-05 16:42:40 -0400
+Processing by DailyController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-05' and '2013-05-06')[0m
+  [1m[35mEvent Load (0.4ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-06' and '2013-05-07')
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-07' and '2013-05-08')[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-08' and '2013-05-09')
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-09' and '2013-05-10')[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (start_at between '2013-05-10' and '2013-05-11')
+  [1m[36mEvent Load (0.4ms)[0m  [1mSELECT "events".* FROM "events" WHERE (start_at between '2013-05-11' and '2013-05-12')[0m
+  Rendered layouts/_banner.html.erb (10.0ms)
+  Rendered daily/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 59ms (Views: 46.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:40 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:40 -0400
+Served asset /banner.css - 304 Not Modified (119ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:40 -0400
+Served asset /daily.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:40 -0400
+Served asset /scaffolds.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:40 -0400
+Served asset /event_calendar.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:40 -0400
+Served asset /events.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:40 -0400
+Served asset /user_list.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:40 -0400
+Served asset /user_profile.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:40 -0400
+Served asset /weekly.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:41 -0400
+Served asset /jquery.js - 304 Not Modified (38ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:41 -0400
+Served asset /event_calendar.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:41 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:41 -0400
+Served asset /application.js - 304 Not Modified (23ms)
+
+
+Started GET "/events/11" for 127.0.0.1 at 2013-05-05 16:42:42 -0400
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "11"]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", "11"]]
+  Rendered layouts/_banner.html.erb (6.8ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT DISTINCT "users".* FROM "users" INNER JOIN "events_users" ON "users"."id" = "events_users"."user_id" WHERE "events_users"."event_id" = 11[0m
+  Rendered events/show.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 79ms (Views: 46.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:43 -0400
+Served asset /application.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:43 -0400
+Served asset /banner.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:43 -0400
+Served asset /daily.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:43 -0400
+Served asset /event_calendar.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:43 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:43 -0400
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:43 -0400
+Served asset /user_list.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:43 -0400
+Served asset /user_profile.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:43 -0400
+Served asset /weekly.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:43 -0400
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:43 -0400
+Served asset /event_calendar.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:43 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:43 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1
+  [1m[36mEvent Load (0.9ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-04-28 04:00:00.000000' <= end_at) AND (start_at< '2013-06-02 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (7.6ms)
+  Rendered calendar/index.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 93ms (Views: 76.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Served asset /banner.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Served asset /event_calendar.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Served asset /events.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Served asset /scaffolds.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Served asset /user_list.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Served asset /user_profile.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Served asset /weekly.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Served asset /event_calendar.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Served asset /events.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:49 -0400
+Served asset /application.js - 304 Not Modified (185ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2013-05-05 16:42:51 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"K6zFk/G7loataETz5N+PNNJ82g/92XNfP3SyikaiMLU="}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 10 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-05 16:42:51 -0400
+Processing by CalendarController#index as HTML
+Completed 401 Unauthorized in 7ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-05-05 16:42:51 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:52 -0400
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:52 -0400
+Served asset /banner.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:52 -0400
+Served asset /daily.css - 304 Not Modified (47ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:52 -0400
+Served asset /event_calendar.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:52 -0400
+Served asset /events.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:52 -0400
+Served asset /scaffolds.css - 304 Not Modified (25ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:52 -0400
+Served asset /user_list.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:52 -0400
+Served asset /user_profile.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 16:42:52 -0400
+Served asset /weekly.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:52 -0400
+Served asset /jquery.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:52 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:52 -0400
+Served asset /event_calendar.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:52 -0400
+Served asset /events.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 16:42:52 -0400
+Served asset /application.js - 304 Not Modified (15ms)
