@@ -34106,3 +34106,1399 @@ Served asset /events.js - 304 Not Modified (0ms)
 
 Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 21:43:14 -0400
 Served asset /event_calendar.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-05-05 21:57:54 -0400
+Processing by CalendarController#index as HTML
+Completed 401 Unauthorized in 83ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-05-05 21:57:54 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (3.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 319ms (Views: 118.7ms | ActiveRecord: 53.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:54 -0400
+Served asset /application.css - 304 Not Modified (101ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:54 -0400
+Served asset /daily.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:54 -0400
+Served asset /events.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:54 -0400
+Served asset /event_calendar.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:54 -0400
+Served asset /banner.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:54 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:54 -0400
+Served asset /user_list.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:54 -0400
+Served asset /weekly.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:55 -0400
+Served asset /user_profile.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 21:57:55 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 21:57:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 21:57:55 -0400
+Served asset /event_calendar.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 21:57:55 -0400
+Served asset /events.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 21:57:55 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2013-05-05 21:57:56 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.erb (4.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:56 -0400
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:57 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:57 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:57 -0400
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:57 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:57 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:57 -0400
+Served asset /user_list.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:57 -0400
+Served asset /user_profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 21:57:57 -0400
+Served asset /weekly.css - 304 Not Modified (56ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 21:57:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 21:57:57 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 21:57:57 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 21:57:57 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 21:57:57 -0400
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAORB7er2VFRqHh2EW7osPUj3vz+S9QI9GJ8fJbC/c=", "user"=>{"email"=>"cw@cw.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'cw@cw.com' LIMIT 1[0m
+Completed 401 Unauthorized in 97ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAORB7er2VFRqHh2EW7osPUj3vz+S9QI9GJ8fJbC/c=", "user"=>{"email"=>"cw@cw.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 154ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Served asset /user_list.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Served asset /weekly.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Served asset /user_profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Served asset /events.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:05 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-05-05 21:58:08 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAORB7er2VFRqHh2EW7osPUj3vz+S9QI9GJ8fJbC/c=", "user"=>{"email"=>"cw@cw.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'cw@cw.com' LIMIT 1
+Completed 401 Unauthorized in 6ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAORB7er2VFRqHh2EW7osPUj3vz+S9QI9GJ8fJbC/c=", "user"=>{"email"=>"cw@cw.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 132ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:08 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:09 -0400
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:09 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:09 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:09 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:09 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:09 -0400
+Served asset /user_list.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:09 -0400
+Served asset /user_profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:09 -0400
+Served asset /weekly.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:09 -0400
+Served asset /jquery.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:09 -0400
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:09 -0400
+Served asset /events.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:09 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-05-05 21:58:13 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyAORB7er2VFRqHh2EW7osPUj3vz+S9QI9GJ8fJbC/c=", "user"=>{"email"=>"cw@wompwomp.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (8.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'cw@wompwomp.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (29.0ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = '2013-05-06 01:58:14.100326', "sign_in_count" = 2, "updated_at" = '2013-05-06 01:58:14.152541' WHERE "users"."id" = 11[0m
+  [1m[35m (23.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/calendar
+Completed 302 Found in 446ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-04-28 04:00:00.000000' <= end_at) AND (start_at< '2013-06-02 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (6.3ms)
+  Rendered calendar/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 86ms (Views: 28.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Served asset /daily.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Served asset /weekly.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Served asset /user_profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Served asset /user_list.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 21:58:14 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+  [1m[36m (2.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (2.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20130408191757)
+Migrating to AddDetailsToUser (20130410131448)
+Migrating to CreatePositions (20130410133545)
+Migrating to CreateCertificates (20130410133810)
+Migrating to CreateEvents (20130414211340)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "start_at" datetime, "end_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+SQLite3::SQLException: table "events" already exists: CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "start_at" datetime, "end_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (1.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.1ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Sun, 05 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Sun, 05 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[35m (24.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Sun, 05 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Sun, 05 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[36m (10.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Sun, 05 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Sun, 05 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[35m (10.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Sun, 05 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Sun, 05 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[36m (29.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Sun, 05 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Sun, 05 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[35m (11.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Sun, 05 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Sun, 05 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[36m (9.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Sun, 05 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Sun, 05 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[35m (9.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Sun, 05 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Sun, 05 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Sun, 05 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Sun, 05 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[35m (9.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Mon, 06 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Mon, 06 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[36m (9.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Mon, 06 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Mon, 06 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[35m (11.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Mon, 06 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Mon, 06 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Mon, 06 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Mon, 06 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Mon, 06 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Mon, 06 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Mon, 06 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Mon, 06 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[35m (10.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Mon, 06 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Mon, 06 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Mon, 06 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Mon, 06 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[35m (13.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Mon, 06 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Mon, 06 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[36m (9.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Tue, 07 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Tue, 07 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[35m (10.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Tue, 07 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Tue, 07 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[36m (9.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Tue, 07 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Tue, 07 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[35m (9.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Tue, 07 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Tue, 07 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Tue, 07 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Tue, 07 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[35m (9.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Tue, 07 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Tue, 07 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[36m (10.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Tue, 07 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Tue, 07 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[35m (9.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Tue, 07 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Tue, 07 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:51 UTC +00:00], ["end_at", Tue, 07 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Tue, 07 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:51 UTC +00:00]]
+  [1m[35m (10.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Wed, 08 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Wed, 08 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Wed, 08 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Wed, 08 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (44.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Wed, 08 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Wed, 08 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (12.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Wed, 08 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Wed, 08 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (56.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Wed, 08 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Wed, 08 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (14.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Wed, 08 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Wed, 08 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (11.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Wed, 08 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Wed, 08 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (13.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Wed, 08 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Wed, 08 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (16.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Wed, 08 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Wed, 08 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (15.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Thu, 09 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Thu, 09 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (9.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Thu, 09 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Thu, 09 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (12.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Thu, 09 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Thu, 09 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (12.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Thu, 09 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Thu, 09 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (14.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Thu, 09 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Thu, 09 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (14.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Thu, 09 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Thu, 09 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (12.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Thu, 09 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Thu, 09 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (16.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Thu, 09 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Thu, 09 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (13.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Thu, 09 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Thu, 09 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (12.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Fri, 10 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Fri, 10 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (13.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Fri, 10 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Fri, 10 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Fri, 10 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Fri, 10 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (11.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Fri, 10 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Fri, 10 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (10.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Fri, 10 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Fri, 10 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (12.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Fri, 10 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Fri, 10 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (12.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Fri, 10 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Fri, 10 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (12.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Fri, 10 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Fri, 10 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (11.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Fri, 10 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Fri, 10 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (11.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sat, 11 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Sat, 11 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (12.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sat, 11 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Sat, 11 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (12.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sat, 11 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Sat, 11 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (12.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sat, 11 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Sat, 11 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (11.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sat, 11 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Sat, 11 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (12.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sat, 11 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Sat, 11 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (17.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sat, 11 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Sat, 11 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (12.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sat, 11 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Sat, 11 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (12.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sat, 11 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Sat, 11 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (20.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sun, 12 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Sun, 12 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (30.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sun, 12 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Sun, 12 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sun, 12 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Sun, 12 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sun, 12 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Sun, 12 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (12.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sun, 12 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Sun, 12 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (11.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sun, 12 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Sun, 12 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (13.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sun, 12 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Sun, 12 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sun, 12 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Sun, 12 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (11.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Sun, 12 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Sun, 12 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (10.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Mon, 13 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Mon, 13 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (11.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Mon, 13 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Mon, 13 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Mon, 13 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Mon, 13 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (11.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Mon, 13 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Mon, 13 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (14.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Mon, 13 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Mon, 13 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (12.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Mon, 13 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Mon, 13 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (9.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Mon, 13 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Mon, 13 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[35m (12.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:52 UTC +00:00], ["end_at", Mon, 13 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Mon, 13 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:52 UTC +00:00]]
+  [1m[36m (9.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Mon, 13 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Mon, 13 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (12.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Tue, 14 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Tue, 14 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (14.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Tue, 14 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Tue, 14 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (13.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Tue, 14 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Tue, 14 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (12.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Tue, 14 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Tue, 14 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (12.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Tue, 14 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Tue, 14 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (11.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Tue, 14 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Tue, 14 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (36.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Tue, 14 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Tue, 14 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (17.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Tue, 14 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Tue, 14 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (15.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Tue, 14 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Tue, 14 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (12.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Wed, 15 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Wed, 15 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (11.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Wed, 15 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Wed, 15 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Wed, 15 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Wed, 15 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (12.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Wed, 15 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Wed, 15 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Wed, 15 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Wed, 15 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (11.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Wed, 15 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Wed, 15 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Wed, 15 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Wed, 15 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (25.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Wed, 15 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Wed, 15 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (12.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Wed, 15 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Wed, 15 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (12.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Thu, 16 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Thu, 16 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (11.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Thu, 16 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Thu, 16 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (11.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Thu, 16 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Thu, 16 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (10.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Thu, 16 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Thu, 16 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (12.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Thu, 16 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Thu, 16 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (12.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Thu, 16 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Thu, 16 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (11.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Thu, 16 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Thu, 16 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (12.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Thu, 16 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Thu, 16 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Thu, 16 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Thu, 16 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (80.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Fri, 17 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Fri, 17 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (14.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Fri, 17 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Fri, 17 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (57.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Fri, 17 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Fri, 17 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (18.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Fri, 17 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Fri, 17 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (11.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Fri, 17 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Fri, 17 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (11.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Fri, 17 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Fri, 17 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Fri, 17 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Fri, 17 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (14.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Fri, 17 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Fri, 17 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (14.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Fri, 17 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Fri, 17 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (12.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sat, 18 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Sat, 18 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (13.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sat, 18 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Sat, 18 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (11.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sat, 18 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Sat, 18 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (11.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sat, 18 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Sat, 18 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (11.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sat, 18 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Sat, 18 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (10.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sat, 18 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Sat, 18 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sat, 18 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Sat, 18 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sat, 18 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Sat, 18 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (10.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sat, 18 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Sat, 18 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (10.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sun, 19 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Sun, 19 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (10.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sun, 19 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Sun, 19 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (9.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sun, 19 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Sun, 19 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (9.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sun, 19 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Sun, 19 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (9.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sun, 19 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Sun, 19 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (8.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sun, 19 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Sun, 19 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:53 UTC +00:00], ["end_at", Sun, 19 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Sun, 19 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:53 UTC +00:00]]
+  [1m[35m (9.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sun, 19 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Sun, 19 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sun, 19 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Sun, 19 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Mon, 20 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Mon, 20 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (9.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Mon, 20 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Mon, 20 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (8.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Mon, 20 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Mon, 20 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (9.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Mon, 20 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Mon, 20 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Mon, 20 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Mon, 20 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (9.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Mon, 20 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Mon, 20 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Mon, 20 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Mon, 20 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (98.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Mon, 20 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Mon, 20 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (13.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Mon, 20 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Mon, 20 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Tue, 21 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Tue, 21 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (11.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Tue, 21 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Tue, 21 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (12.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Tue, 21 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Tue, 21 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (12.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Tue, 21 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Tue, 21 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (11.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Tue, 21 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Tue, 21 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (10.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Tue, 21 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Tue, 21 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (11.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Tue, 21 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Tue, 21 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (11.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Tue, 21 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Tue, 21 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (8.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Tue, 21 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Tue, 21 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Wed, 22 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Wed, 22 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Wed, 22 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Wed, 22 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Wed, 22 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Wed, 22 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (9.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Wed, 22 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Wed, 22 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Wed, 22 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Wed, 22 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (10.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Wed, 22 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Wed, 22 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Wed, 22 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Wed, 22 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (9.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Wed, 22 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Wed, 22 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (8.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Wed, 22 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Wed, 22 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (10.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Thu, 23 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Thu, 23 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Thu, 23 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Thu, 23 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (9.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Thu, 23 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Thu, 23 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (8.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Thu, 23 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Thu, 23 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (39.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Thu, 23 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Thu, 23 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (10.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Thu, 23 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Thu, 23 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Thu, 23 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Thu, 23 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Thu, 23 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Thu, 23 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (11.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Thu, 23 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Thu, 23 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Fri, 24 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Fri, 24 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (9.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Fri, 24 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Fri, 24 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (12.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Fri, 24 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Fri, 24 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (9.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Fri, 24 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Fri, 24 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Fri, 24 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Fri, 24 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (10.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Fri, 24 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Fri, 24 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (8.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Fri, 24 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Fri, 24 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (10.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Fri, 24 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Fri, 24 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (10.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Fri, 24 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Fri, 24 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (16.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sat, 25 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Sat, 25 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sat, 25 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Sat, 25 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (7.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sat, 25 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Sat, 25 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (10.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sat, 25 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Sat, 25 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sat, 25 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Sat, 25 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (12.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sat, 25 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Sat, 25 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (9.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sat, 25 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Sat, 25 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sat, 25 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Sat, 25 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sat, 25 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Sat, 25 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sun, 26 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Sun, 26 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sun, 26 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Sun, 26 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (10.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sun, 26 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Sun, 26 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sun, 26 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Sun, 26 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sun, 26 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Sun, 26 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (13.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sun, 26 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Sun, 26 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (10.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sun, 26 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Sun, 26 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (10.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sun, 26 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Sun, 26 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (10.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Sun, 26 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Sun, 26 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Mon, 27 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Mon, 27 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Mon, 27 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Mon, 27 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (9.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Mon, 27 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Mon, 27 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (10.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Mon, 27 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Mon, 27 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[36m (27.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:54 UTC +00:00], ["end_at", Mon, 27 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Mon, 27 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:54 UTC +00:00]]
+  [1m[35m (9.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Mon, 27 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Mon, 27 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (11.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Mon, 27 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Mon, 27 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (8.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Mon, 27 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Mon, 27 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (12.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Mon, 27 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Mon, 27 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (12.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Tue, 28 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Tue, 28 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (9.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Tue, 28 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Tue, 28 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (10.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Tue, 28 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Tue, 28 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (9.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Tue, 28 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Tue, 28 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (9.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Tue, 28 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Tue, 28 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (10.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Tue, 28 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Tue, 28 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (8.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Tue, 28 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Tue, 28 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (10.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Tue, 28 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Tue, 28 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (9.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Tue, 28 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Tue, 28 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (9.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Wed, 29 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Wed, 29 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (10.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Wed, 29 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Wed, 29 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Wed, 29 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Wed, 29 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (10.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Wed, 29 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Wed, 29 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Wed, 29 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Wed, 29 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (11.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Wed, 29 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Wed, 29 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (11.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Wed, 29 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Wed, 29 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (9.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (35.0ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Wed, 29 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Wed, 29 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (10.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Wed, 29 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Wed, 29 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (9.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Thu, 30 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Thu, 30 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Thu, 30 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Thu, 30 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (10.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Thu, 30 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Thu, 30 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (9.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Thu, 30 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Thu, 30 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (9.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Thu, 30 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Thu, 30 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Thu, 30 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Thu, 30 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (10.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Thu, 30 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Thu, 30 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (12.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Thu, 30 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Thu, 30 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (10.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Thu, 30 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Thu, 30 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (9.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Fri, 31 May 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Fri, 31 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (9.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Fri, 31 May 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Fri, 31 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (74.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Fri, 31 May 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Fri, 31 May 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (11.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Fri, 31 May 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Fri, 31 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (13.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Fri, 31 May 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Fri, 31 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (10.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Fri, 31 May 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Fri, 31 May 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Fri, 31 May 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Fri, 31 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (9.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Fri, 31 May 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Fri, 31 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (10.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Fri, 31 May 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Fri, 31 May 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (11.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sat, 01 Jun 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Sat, 01 Jun 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sat, 01 Jun 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Sat, 01 Jun 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (11.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sat, 01 Jun 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Sat, 01 Jun 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (11.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sat, 01 Jun 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Sat, 01 Jun 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (13.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sat, 01 Jun 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Sat, 01 Jun 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (14.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sat, 01 Jun 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Sat, 01 Jun 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (12.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sat, 01 Jun 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Sat, 01 Jun 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (13.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sat, 01 Jun 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Sat, 01 Jun 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (18.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sat, 01 Jun 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Sat, 01 Jun 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (17.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sun, 02 Jun 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Sun, 02 Jun 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (10.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sun, 02 Jun 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Sun, 02 Jun 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (11.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sun, 02 Jun 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Sun, 02 Jun 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (10.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sun, 02 Jun 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Sun, 02 Jun 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (10.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sun, 02 Jun 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Sun, 02 Jun 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (9.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sun, 02 Jun 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Sun, 02 Jun 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sun, 02 Jun 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Sun, 02 Jun 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (8.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sun, 02 Jun 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Sun, 02 Jun 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Sun, 02 Jun 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Sun, 02 Jun 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (10.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Mon, 03 Jun 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Mon, 03 Jun 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (9.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Mon, 03 Jun 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Mon, 03 Jun 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (9.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Mon, 03 Jun 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Mon, 03 Jun 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (10.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Mon, 03 Jun 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Mon, 03 Jun 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Mon, 03 Jun 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Mon, 03 Jun 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (12.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Mon, 03 Jun 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Mon, 03 Jun 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (18.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Mon, 03 Jun 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Mon, 03 Jun 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Mon, 03 Jun 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Mon, 03 Jun 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[35m (9.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:55 UTC +00:00], ["end_at", Mon, 03 Jun 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Mon, 03 Jun 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:55 UTC +00:00]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:56 UTC +00:00], ["end_at", Tue, 04 Jun 2013 08:00:00 UTC +00:00], ["name", "Paid Driver - Shift 1"], ["start_at", Tue, 04 Jun 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:56 UTC +00:00]]
+  [1m[35m (8.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:56 UTC +00:00], ["end_at", Tue, 04 Jun 2013 08:00:00 UTC +00:00], ["name", "EMT - Shift 1"], ["start_at", Tue, 04 Jun 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:56 UTC +00:00]]
+  [1m[36m (10.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:56 UTC +00:00], ["end_at", Tue, 04 Jun 2013 08:00:00 UTC +00:00], ["name", "Medic - Shift 1"], ["start_at", Tue, 04 Jun 2013 00:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:56 UTC +00:00]]
+  [1m[35m (14.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:56 UTC +00:00], ["end_at", Tue, 04 Jun 2013 16:00:00 UTC +00:00], ["name", "Paid Driver - Shift 2"], ["start_at", Tue, 04 Jun 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:56 UTC +00:00]]
+  [1m[36m (9.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:56 UTC +00:00], ["end_at", Tue, 04 Jun 2013 16:00:00 UTC +00:00], ["name", "EMT - Shift 2"], ["start_at", Tue, 04 Jun 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:56 UTC +00:00]]
+  [1m[35m (10.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:56 UTC +00:00], ["end_at", Tue, 04 Jun 2013 16:00:00 UTC +00:00], ["name", "Medic - Shift 2"], ["start_at", Tue, 04 Jun 2013 08:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:56 UTC +00:00]]
+  [1m[36m (10.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:56 UTC +00:00], ["end_at", Tue, 04 Jun 2013 23:59:59 UTC +00:00], ["name", "Paid Driver - Shift 3"], ["start_at", Tue, 04 Jun 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:56 UTC +00:00]]
+  [1m[35m (12.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Mon, 06 May 2013 01:59:56 UTC +00:00], ["end_at", Tue, 04 Jun 2013 23:59:59 UTC +00:00], ["name", "EMT - Shift 3"], ["start_at", Tue, 04 Jun 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:56 UTC +00:00]]
+  [1m[36m (11.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "events" ("created_at", "end_at", "name", "start_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Mon, 06 May 2013 01:59:56 UTC +00:00], ["end_at", Tue, 04 Jun 2013 23:59:59 UTC +00:00], ["name", "Medic - Shift 3"], ["start_at", Tue, 04 Jun 2013 16:00:00 UTC +00:00], ["updated_at", Mon, 06 May 2013 01:59:56 UTC +00:00]]
+  [1m[35m (10.3ms)[0m  commit transaction
+Connecting to database specified by database.yml
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-05-05 22:00:12 -0400
+Processing by CalendarController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  [1m[35mEvent Load (2.8ms)[0m  SELECT "events".* FROM "events" WHERE (('2013-04-28 04:00:00.000000' <= end_at) AND (start_at< '2013-06-02 04:00:00.000000')) ORDER BY start_at ASC
+  Rendered layouts/_banner.html.erb (5.9ms)
+  Rendered calendar/index.html.erb within layouts/application (186.7ms)
+Completed 200 OK in 587ms (Views: 275.4ms | ActiveRecord: 39.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:13 -0400
+Served asset /application.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:13 -0400
+Served asset /banner.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:13 -0400
+Served asset /daily.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:13 -0400
+Served asset /event_calendar.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:13 -0400
+Served asset /events.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:13 -0400
+Served asset /scaffolds.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:13 -0400
+Served asset /user_list.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:13 -0400
+Served asset /weekly.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:13 -0400
+Served asset /user_profile.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:13 -0400
+Served asset /jquery.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:13 -0400
+Served asset /event_calendar.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:13 -0400
+Served asset /events.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:14 -0400
+Served asset /application.js - 304 Not Modified (106ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2013-05-05 22:00:17 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mPosition Load (0.1ms)[0m  [1mSELECT "positions".* FROM "positions" [0m
+  Rendered layouts/_banner.html.erb (2.9ms)
+  Rendered users/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 57ms (Views: 25.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:17 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:17 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:17 -0400
+Served asset /banner.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:17 -0400
+Served asset /event_calendar.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:17 -0400
+Served asset /events.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:17 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:17 -0400
+Served asset /user_list.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:17 -0400
+Served asset /weekly.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:17 -0400
+Served asset /user_profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:17 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:18 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:18 -0400
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:18 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/calendar" for 127.0.0.1 at 2013-05-05 22:00:21 -0400
+Processing by CalendarController#index as HTML
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 11 LIMIT 1
+  [1m[36mEvent Load (6.6ms)[0m  [1mSELECT "events".* FROM "events" WHERE (('2013-04-28 04:00:00.000000' <= end_at) AND (start_at< '2013-06-02 04:00:00.000000')) ORDER BY start_at ASC[0m
+  Rendered layouts/_banner.html.erb (2.3ms)
+  Rendered calendar/index.html.erb within layouts/application (178.8ms)
+Completed 200 OK in 314ms (Views: 191.1ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:21 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/banner.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:21 -0400
+Served asset /banner.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/event_calendar.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:21 -0400
+Served asset /event_calendar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/daily.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:21 -0400
+Served asset /daily.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:21 -0400
+Served asset /events.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:21 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_list.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:21 -0400
+Served asset /user_list.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user_profile.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:21 -0400
+Served asset /user_profile.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/weekly.css?body=1" for 127.0.0.1 at 2013-05-05 22:00:21 -0400
+Served asset /weekly.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:21 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/event_calendar.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:22 -0400
+Served asset /event_calendar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:22 -0400
+Served asset /events.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 22:00:22 -0400
+Served asset /application.js - 304 Not Modified (9ms)
