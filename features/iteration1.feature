@@ -7,10 +7,9 @@ Feature: iteration 1
 
 
 	Scenario: Creating a shift
-		Given I am on the events page
-		When I follow New Event
+		Given I am authenticated
+		And I am on the calendar page
+		When I follow Create New Event
 		And I fill in PARTY TIME for Name
 		When I press Create Event
 		Then the event should be created
-		
-

@@ -1,18 +1,10 @@
 
-Then /^I should see the current week$/ do
-page.should have_content('24-Hours')
-end
-
-When(/^I visit 'Weekly Calendar'$/) do
-  visit('/weekly')
-end
-
 And /^I fill in email with testuser@gmail.com$/ do
 	fill_in(:user_email, :with => "testuser@gmail.com")
 end
 
-And /^I fill in email with testuseredit@colgate.edu$/ do
-	fill_in(:user_email, :with => "testuseredit@colgate.edu")
+And /^I fill in phone with 123-456-7891$/ do
+	fill_in(:user_phone, :with => "123-456-7891")
 end
 
 And /^I fill in password with test111$/ do
@@ -61,7 +53,7 @@ end
 
 
 Then /^I should see the current month$/ do
-page.should have_content('March')
+page.should have_content('May')
 end
 
 Then /^the event should be created$/ do
@@ -72,16 +64,16 @@ And /^I fill in PARTY TIME for Name$/ do
   fill_in('Name', :with => 'PARTY TIME')
 end 
 
-When /^I follow New Event$/ do
-  click_link('New Event')
+When /^I follow Create New Event$/ do
+  click_button('Create New Event')
 end
 
 When /^I press Create Event$/ do
   click_button('Create Event')
 end
 
-When /^I follow Edit$/ do
-	click_link ('Edit')
+When /^I follow Edit User$/ do
+	click_link ('Edit User')
 end
 
 When /^I press Submit$/ do

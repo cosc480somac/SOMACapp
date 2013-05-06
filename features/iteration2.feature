@@ -36,17 +36,13 @@ Feature: Iteration 2
 	Scenario: Editing User Profile
 		Given I am authenticated
 		And I am on my profile page
-		And I follow Edit
-		When I fill in email with testuseredit@colgate.edu
+		And I follow Edit User
+		When I fill in phone with 123-456-7891
 		And I press Submit
 		Then I am on my profile page
 
 
 
-	Scenario: View Weekly Calendar
-		Given I am on the calendar page
-		When I visit 'Weekly Calendar'
-		Then I should see the current week
 
 
 	

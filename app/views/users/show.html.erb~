@@ -29,7 +29,6 @@
 		<th> Certification</th>
 		<th> Expiration Date</th>
 		<th></th>
-		<th></th>
 	</tr>
 	<% @certification.each do |certificate| %>
 		<tr>

@@ -1,18 +1,10 @@
 
-Then /^I should see the current week$/ do
-page.should have_content('24-Hours')
-end
-
-When(/^I visit 'Weekly Calendar'$/) do
-  visit('/weekly')
-end
-
 And /^I fill in email with testuser@gmail.com$/ do
 	fill_in(:user_email, :with => "testuser@gmail.com")
 end
 
-And /^I fill in email with testuseredit@colgate.edu$/ do
-	fill_in(:user_email, :with => "testuseredit@colgate.edu")
+And /^I fill in phone with 123-456-7891$/ do
+	fill_in(:user_phone, :with => "123-456-7891")
 end
 
 And /^I fill in password with test111$/ do
@@ -61,7 +53,7 @@ end
 
 
 Then /^I should see the current month$/ do
-page.should have_content('March')
+page.should have_content('May')
 end
 
 Then /^the event should be created$/ do
@@ -72,16 +64,16 @@ And /^I fill in PARTY TIME for Name$/ do
   fill_in('Name', :with => 'PARTY TIME')
 end 
 
-When /^I follow New Event$/ do
-  click_link('New Event')
+When /^I follow Create New Event$/ do
+  click_button('Create New Event')
 end
 
 When /^I press Create Event$/ do
   click_button('Create Event')
 end
 
-When /^I follow Edit$/ do
-	click_link ('Edit')
+When /^I follow Edit User$/ do
+	click_link ('Edit User')
 end
 
 When /^I press Submit$/ do
@@ -107,25 +99,6 @@ Then /^I should see "testuseredit@colgate.edu"$/ do
   assert page.has_content?("testuseredit@colgate.edu")
 end
 
-Given /^There is a shift up for trade$/ do
-	# assert page.has_content or assert that the trade table has something?
-end
-
-Then /^I should see that shift highlighted$/ do
-	# not sure if we can do this
-end
-
-Given /^I follow Trades$/ do
-	click_link ('Trade')
-end
-
-Given /^I press Request a Trade$/ do
-	click_button ('Request a Trade')
-end
-
-Given /^I select the 9-12 EMT shift for 4\/20\/13$/ do
-	#implement with checkboxes?
-end
 
 Then /^I should see that shift$/ do
 	assert page.has_content('EMT')
@@ -146,7 +119,7 @@ When /^I fill in Certificate with EMT Training$/ do
 end
 
 Then /^I should see EMT Training$/ do
-	assert page.has_content('EMT Training')
+	assert page.should have_content('EMT Training')
 end
 Then /^I should see Driver$/ do
 	assert page.should have_content('Driver')
@@ -182,3 +155,6 @@ And /^I press Save Changes$/ do
 	click_button('Save Changes')
 end
 
+And /^I should see 123-456-7891$/ do
+	assert page.should have_content('123-456-7891')
+end
