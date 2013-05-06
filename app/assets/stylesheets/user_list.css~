@@ -1,4 +1,21 @@
-
+html, body {
+  margin: 0;
+  padding: 0;
+  background: White;
+  color: DarkSlateGrey;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 10pt;
+}
+div#main {
+  margin: 0;
+  padding: 0 20px 20px;
+}
+a {
+  background: transparent;
+  color: maroon;
+  text-decoration: underline;
+  font-weight: bold;
+}
 h1 {
   color: maroon;
   font-size: 150%;
@@ -16,31 +33,29 @@ h1.title {
   font-size: 2em;
   font-style: normal;
 }
-ul#user {
-	list-style-type: none;
-}
-ul#user li {
-	padding-left: 12px;
-}
-table#certificates {
+table#users {
   margin: 10px;
   border-collapse: collapse;
-  width: 50%;
+  width: 100%;
   border-bottom: 2px solid black;
 }
-table#certificates th {
+table#users th {
   border: 2px solid black;
   font-weight: bold;
   background-color: wheat;
 }
-table#certificates th, table#certificates td {
+table#users th, table#users td {
   padding: 4px;
   text-align: left;
 }
-table#certificates td {
+
+table#users td {
   padding: 4px;
   text-align: left;
 	background-color: #FFFFF2;
+}
+table#users th.hilite {
+  background-color: yellow;
 }
 #notice #warning {
   background: rosybrown;

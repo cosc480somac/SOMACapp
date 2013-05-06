@@ -37,8 +37,11 @@ Feature: Iteration 3
 
 	Scenario: Add Certificates to Profile
 		Given I am authenticated
-		And I am on Edit Profile Page
-		When I fill in Certificate with EMT Training
+		And I should be on my profile page
+		When I follow Add New Certificate
+		And I fill in Certificate with EMT Training
+		And I select 1/1/2015 for Expiration Date
 		And I press Submit
-		Then I should visit my profile page
-		Then I should see EMT Training
+		Then I should be on my profile page
+		And I should see EMT Training
+		And I should see 1/1/2015

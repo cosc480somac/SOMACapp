@@ -30,19 +30,15 @@ Feature: Iteration 3
 	Scenario: Add Positions to Profile
 		Given I am authenticated
 		And I am on Edit Profile Page
-		And I press Add Position
-		When I select Stand By
+		When I check the following positions: Driver, Medic
 		And I press Submit
-		Then I should be on my profile page
-		And I should see Stand By
+		Then I should see Driver
+		And I should see Medic
 
 	Scenario: Add Certificates to Profile
 		Given I am authenticated
 		And I am on Edit Profile Page
-		And I press Add Certificate
 		When I fill in Certificate with EMT Training
-		And I fill in Expiration Date with 1/1/2015
 		And I press Submit
-		Then I should be on my profile page
-		And I should see EMT Training
-		And I should see 1/1/2015
+		Then I should visit my profile page
+		Then I should see EMT Training

@@ -2,7 +2,7 @@
 <%=render :partial => 'layouts/banner' %> 
 <br/>
 
-<%= form_tag user_certificates_path do %>
+<%= form_for [@user, @certificate] do %>
 
 	<p>
 		<%= label :certificate, :name, 'Name' %>
@@ -15,4 +15,5 @@
 	</p>
 
 	<%= submit_tag 'Save Changes' %>
+	<%= button_to 'Delete', certificates_path(@certificate), :method => :delete, :confirm => 'Are you sure?' %>
 <%end%>

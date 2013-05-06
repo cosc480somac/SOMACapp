@@ -29,6 +29,7 @@
 		<th> Certification</th>
 		<th> Expiration Date</th>
 		<th></th>
+		<th></th>
 	</tr>
 	<% @certification.each do |certificate| %>
 		<tr>
@@ -38,7 +39,7 @@
 		</tr>
 	<% end %>
 </table>
-<% if can? :read, User, :id=>@user.id %>
+<% if can? :update, User, :id=>@user.id %>
 <%= link_to 'Add New Certificate', new_user_certificate_path(@user) %>
 <% end %>
 <p></p>
