@@ -46,7 +46,7 @@ Given /^I am authenticated$/ do
 	fill_in("user_email", :with => "testuser@gmail.com")
 	fill_in(:user_password, :with => "test111")
 	fill_in(:user_password_confirmation, :with => "test111")
-	page.select("helper", :from => "user_role")
+	page.select("Helper", :from => "user_role")
 	click_button( "Sign up")
 	@current_user = User.find_by_email("testuser@gmail.com")
 	@current_user.first_name ="test"
@@ -107,25 +107,6 @@ Then /^I should see "testuseredit@colgate.edu"$/ do
   assert page.has_content?("testuseredit@colgate.edu")
 end
 
-Given /^There is a shift up for trade$/ do
-	# assert page.has_content or assert that the trade table has something?
-end
-
-Then /^I should see that shift highlighted$/ do
-	# not sure if we can do this
-end
-
-Given /^I follow Trades$/ do
-	click_link ('Trade')
-end
-
-Given /^I press Request a Trade$/ do
-	click_button ('Request a Trade')
-end
-
-Given /^I select the 9-12 EMT shift for 4\/20\/13$/ do
-	#implement with checkboxes?
-end
 
 Then /^I should see that shift$/ do
 	assert page.has_content('EMT')
@@ -142,11 +123,11 @@ Then /I should see the daily view for 4\/20\/13$/ do
 end
 
 When /^I fill in Certificate with EMT Training$/ do
-	fill_in('Certificate', :with => 'EMT Training')
+	fill_in('certificate_name', :with => 'EMT Training')
 end
 
 Then /^I should see EMT Training$/ do
-	assert page.has_content('EMT Training')
+	assert page.should have_content('EMT Training')
 end
 Then /^I should see Driver$/ do
 	assert page.should have_content('Driver')
@@ -178,11 +159,7 @@ When /^I follow Add New Certificate$/ do
 	click_link('Add New Certificate')
 end
 
-
-Then /^I should see 1\/1\/2015$/ do
-	assert page.should have_content('1/1/2015')
+And /^I press Save Changes$/ do
+	click_button('Save Changes')
 end
 
-When /^I select 1\/1\/2015 for Expiration Date$/ do 
-	
-end

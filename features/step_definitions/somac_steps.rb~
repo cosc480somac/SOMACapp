@@ -46,7 +46,7 @@ Given /^I am authenticated$/ do
 	fill_in("user_email", :with => "testuser@gmail.com")
 	fill_in(:user_password, :with => "test111")
 	fill_in(:user_password_confirmation, :with => "test111")
-	page.select("helper", :from => "role")
+	page.select("Helper", :from => "user_role")
 	click_button( "Sign up")
 	@current_user = User.find_by_email("testuser@gmail.com")
 	@current_user.first_name ="test"
@@ -142,7 +142,7 @@ Then /I should see the daily view for 4\/20\/13$/ do
 end
 
 When /^I fill in Certificate with EMT Training$/ do
-	fill_in('Certificate', :with => 'EMT Training')
+	fill_in('certificate_name', :with => 'EMT Training')
 end
 
 Then /^I should see EMT Training$/ do
@@ -178,11 +178,7 @@ When /^I follow Add New Certificate$/ do
 	click_link('Add New Certificate')
 end
 
-
-Then /^I should see 1\/1\/2015$/ do
-	assert page.should have_content('1/1/2015')
+And /^I press Save Changes$/ do
+	click_button('Save Changes')
 end
 
-When /^I select 1\/1\/2015 for Expiration Date$/ do 
-	
-end
