@@ -6,21 +6,21 @@ class Ability
        user ||= User.new # guest user (not logged in)
        if user.role == "admin"
          can :manage, :all
-	 can :assign_roles, User
+	 			 can :assign_roles, User
        else if user.role == "helper"
-	 can :read, :all
-	 can [:create, :update, :destroy], User, :id=>user.id
-	 #can [:update, :destroy], Certificates, :id=>user.id
-	 can [:update, :destroy], Certificate, :user_id=>user.id
-	 can [:update, :destroy], Event, :id=>user.id 
-       else if user.role == "coordinator"
-	 can :read, :all
-	 can [:create, :update, :destroy], User, :id=>user.id
-	 #can [:update, :destroy], Certificates, :id=>user.id
-	 can [:create, :update, :destroy], Certificate, :id=>user.id
-	 can [:create, :update, :destroy], Event
-       else
-	 can :read, :all
+	 			 can :read, :all
+	 			 can [:create, :update, :destroy], User, :id=>user.id
+	 			 #can [:update, :destroy], Certificates, :id=>user.id
+	 			 can [:create, :update, :destroy], Certificate, :user_id=>user.id
+	 			 can :manage, Event
+   		else if user.role == "coordinator"
+	 		 	can :read, :all
+	 		 	can [:create, :update, :destroy], User, :id=>user.id
+	 		 #can [:update, :destroy], Certificates, :id=>user.id
+	 			can [:create, :update, :destroy], Certificate, :id=>user.id
+				can :manage, Event
+      else
+	 			can :read, :all
        end
        end
        end

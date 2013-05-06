@@ -12,13 +12,14 @@ class Ability
 	 			 can [:create, :update, :destroy], User, :id=>user.id
 	 			 #can [:update, :destroy], Certificates, :id=>user.id
 	 			 can [:create, :update, :destroy], Certificate, :user_id=>user.id
-	 			 can [:update, :destroy], Event, :id=>user.id 
+	 			 can :manage, Event
+				 can :destroy, Event, :id=>user.id
    		else if user.role == "coordinator"
 	 		 	can :read, :all
 	 		 	can [:create, :update, :destroy], User, :id=>user.id
 	 		 #can [:update, :destroy], Certificates, :id=>user.id
 	 			can [:create, :update, :destroy], Certificate, :id=>user.id
-				can [:create, :update, :destroy], Event
+				can :manage, Event
       else
 	 			can :read, :all
        end
