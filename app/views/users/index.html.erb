@@ -17,8 +17,8 @@
 
 <table id="users" border="1">
 	<tr>
-		<th class=@firstname_header><%= link_to "First Name", users_path(:sort => 'firstname', :positions => @selected_positions) %></th>
-		<th class=@firstname_header><%= link_to "Last Name", users_path(:sort => 'lastname', :positions => @selected_positions) %></th>
+		<th class=@firstname_header><%= link_to "First Name", users_path(:sort => 'first_name', :positions => @selected_positions) %></th>
+		<th class=@firstname_header><%= link_to "Last Name", users_path(:sort => 'last_name', :positions => @selected_positions) %></th>
 		<th>Email</th>
 		<th>Phone</th>
 		<th>Positions</th>

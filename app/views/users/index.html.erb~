@@ -1,8 +1,11 @@
 
-<h2> All Helpers </h2>
+<%= stylesheet_link_tag "user_list" %>
+
+<h1> All Helpers </h1>
 
 <%=render :partial => 'layouts/banner' %> 
 
+<br/>
 <br/>
 
 <%= form_tag(users_path, :method => :get) do %>
@@ -12,7 +15,7 @@
 	<%= submit_tag("Submit") %>
 <%end%>
 
-<table border="1">
+<table id="users" border="1">
 	<tr>
 		<th class=@firstname_header><%= link_to "First Name", users_path(:sort => 'firstname', :positions => @selected_positions) %></th>
 		<th class=@firstname_header><%= link_to "Last Name", users_path(:sort => 'lastname', :positions => @selected_positions) %></th>

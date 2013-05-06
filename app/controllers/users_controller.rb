@@ -1,17 +1,12 @@
 class UsersController < ApplicationController
 load_and_authorize_resource
+
 	def index
 		@users = User.all
 		@positions = Position.all
-		sort = params[:sort] || session[:sort]
-		if sort == 'firstname'
-			@users = User.order("first_name ASC")
-		elsif sort == 'lastname'
-			@users = User.order("last_name ASC")
-		end
+    sort = params[:sort] || session[:sort]
 		@all_positions = Position.all_titles
 		@selected_positions = params[:positions] || session[:positions] || {}
-
 		if @selected_positions == {}
 			@selected_positions = Hash[@all_positions.map {|position| [position, position]}]
 		elsif @selected_positions != {}
@@ -21,7 +16,17 @@ load_and_authorize_resource
 				@users << User.find(position.user_id)
 			end
 		end
+		@test = User.all
+		@t = @test - @users
+		@users = @test - @t
+    case sort
+    when 'first_name'
+      @users = @users.sort_by{|e| e[:first_name].downcase}
+    when 'last_name'
+      @users = @users.sort_by{|f| f[:last_name].downcase}
+    end
 	end
+
 
   def new
     # default: render 'new' template
