@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-before_create  ROLES = %w[admin coordinator helper]
 	has_many :positions
 	has_many :certificates
 	has_many :roles
@@ -19,6 +18,6 @@ before_create  ROLES = %w[admin coordinator helper]
 		:first_name, :last_name, :phone, :certificates_attributes, :role, :name
   # attr_accessible :title, :body
 
-
+ ROLES = %w[admin coordinator helper]
 
 end
