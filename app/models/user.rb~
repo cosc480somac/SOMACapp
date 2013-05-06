@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 	has_many :positions
 	has_many :certificates
+	has_many :roles
 	accepts_nested_attributes_for :certificates
 	has_and_belongs_to_many :events, :uniq => true	
 
@@ -14,8 +15,9 @@ class User < ActiveRecord::Base
 
 
  attr_accessible :email, :password, :password_confirmation, :remember_me,
-		:first_name, :last_name, :phone
+		:first_name, :last_name, :phone, :certificates_attributes, :role, :name
   # attr_accessible :title, :body
 
+ ROLES = %w[admin coordinator helper]
 
 end
