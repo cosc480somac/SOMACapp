@@ -16,9 +16,14 @@ before_create  ROLES = %w[admin coordinator helper]
 
 
  attr_accessible :email, :password, :password_confirmation, :remember_me,
+<<<<<<< HEAD
 		:first_name, :last_name, :phone, :certificates_attributes, :role, :name
+=======
+		:first_name, :last_name, :phone, :certificates_attributes
+>>>>>>> 9fa41c8dcf8ca1791dafcdc913b50b2ee5e4f063
   # attr_accessible :title, :body
 
+ ROLES = %w[admin coordinator helper]
 
 
 end

@@ -46,6 +46,7 @@ Given /^I am authenticated$/ do
 	fill_in("user_email", :with => "testuser@gmail.com")
 	fill_in(:user_password, :with => "test111")
 	fill_in(:user_password_confirmation, :with => "test111")
+	page.select("Helper", :from => "user_role")
 	click_button( "Sign up")
 	@current_user = User.find_by_email("testuser@gmail.com")
 	@current_user.first_name ="test"
@@ -79,11 +80,6 @@ When /^I press Create Event$/ do
   click_button('Create Event')
 end
 
-Then /^I should be on my profile page$/ do
-	assert page.has_content?("Test User")
-	current_path.should == ("/users/#{@current_user.id}")
-end
-
 When /^I follow Edit$/ do
 	click_link ('Edit')
 end
@@ -111,25 +107,6 @@ Then /^I should see "testuseredit@colgate.edu"$/ do
   assert page.has_content?("testuseredit@colgate.edu")
 end
 
-Given /^There is a shift up for trade$/ do
-	# assert page.has_content or assert that the trade table has something?
-end
-
-Then /^I should see that shift highlighted$/ do
-	# not sure if we can do this
-end
-
-Given /^I follow Trades$/ do
-	click_link ('Trade')
-end
-
-Given /^I press Request a Trade$/ do
-	click_button ('Request a Trade')
-end
-
-Given /^I select the 9-12 EMT shift for 4\/20\/13$/ do
-	#implement with checkboxes?
-end
 
 Then /^I should see that shift$/ do
 	assert page.has_content('EMT')
@@ -145,13 +122,12 @@ Then /I should see the daily view for 4\/20\/13$/ do
 	assert page.has_content('4/20/13')
 end
 
-
 When /^I fill in Certificate with EMT Training$/ do
-	@certificate = Certificate.create(:name => "EMT Training", :user_id =>1, :expiration_date => "1/1/2015")
+	fill_in('certificate_name', :with => 'EMT Training')
 end
 
 Then /^I should see EMT Training$/ do
-	assert page.has_content('EMT Training')
+	assert page.should have_content('EMT Training')
 end
 Then /^I should see Driver$/ do
 	assert page.should have_content('Driver')
@@ -179,6 +155,11 @@ When /I (un)?check the following positions: (.*)/ do |uncheck, positions_list|
 	end
 end
 
-When(/^I should visit my profile page$/) do
-  visit('/users/1')
+When /^I follow Add New Certificate$/ do
+	click_link('Add New Certificate')
 end
+
+And /^I press Save Changes$/ do
+	click_button('Save Changes')
+end
+

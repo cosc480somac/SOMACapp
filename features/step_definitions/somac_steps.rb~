@@ -46,6 +46,7 @@ Given /^I am authenticated$/ do
 	fill_in("user_email", :with => "testuser@gmail.com")
 	fill_in(:user_password, :with => "test111")
 	fill_in(:user_password_confirmation, :with => "test111")
+	page.select("Helper", :from => "user_role")
 	click_button( "Sign up")
 	@current_user = User.find_by_email("testuser@gmail.com")
 	@current_user.first_name ="test"
@@ -77,11 +78,6 @@ end
 
 When /^I press Create Event$/ do
   click_button('Create Event')
-end
-
-Then /^I should be on my profile page$/ do
-	assert page.has_content?("Test User")
-	current_path.should == ("/users/#{@current_user.id}")
 end
 
 When /^I follow Edit$/ do
@@ -145,11 +141,44 @@ Then /I should see the daily view for 4\/20\/13$/ do
 	assert page.has_content('4/20/13')
 end
 
-
 When /^I fill in Certificate with EMT Training$/ do
-	@certificate = Certificate.create(:name => "EMT Training", :user_id =>1, :expiration_date => "1/1/2015")
+	fill_in('certificate_name', :with => 'EMT Training')
 end
 
 Then /^I should see EMT Training$/ do
 	assert page.has_content('EMT Training')
 end
+Then /^I should see Driver$/ do
+	assert page.should have_content('Driver')
+end
+
+Then /^I should see Medic$/ do
+	assert page.should have_content('Medic')
+end
+
+Then /^I should not see EMT$/ do
+	assert page.should_not have_content('EMT')
+end
+
+When /I (un)?check the following positions: (.*)/ do |uncheck, positions_list|
+  # HINT: use String#split to split up the rating_list, then
+  #   iterate over the ratings and reuse the "When I check..." or
+  #   "When I uncheck..." steps in lines 89-95 of web_steps.rb
+	positions_list.split(', ').each do |r|
+		position = "positions_" + r
+		if uncheck
+			uncheck(position)
+		else
+			check(position)
+		end
+	end
+end
+
+When /^I follow Add New Certificate$/ do
+	click_link('Add New Certificate')
+end
+
+And /^I press Save Changes$/ do
+	click_button('Save Changes')
+end
+
